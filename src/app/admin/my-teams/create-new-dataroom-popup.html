@@ -1,0 +1,147 @@
+<h1 mat-dialog-title>Create New Data Room</h1>
+<div mat-dialog-content>
+    <div class="row">
+        <div class="col-md-12">
+                <mat-tab-group mat-align-tabs="center">
+                        <mat-tab class="Active" label="Create a blank Data Room">
+                            <mat-card>
+                                    <div class="row">
+                                            <div class="col-md-6">
+                                                    <mat-form-field class="popuptxt">
+                                                            <mat-label>Choose Data Room</mat-label>
+                                                            <mat-select>
+                                                              <mat-option >
+                                                                XyZ
+                                                              </mat-option>
+                                                            </mat-select>
+                                                          </mat-form-field>
+                                            </div>
+                                            <div class="col-md-6">
+                                                    <mat-form-field class="popuptxt">
+                                                            <input matInput type="number" placeholder="Enter Data Room Storage(GB)" min="10">
+                                                          </mat-form-field>
+                                            </div>
+                                        </div>
+                                        <div class="row rowmrg">
+                                            <div class="col-md-12 ">
+                                                    <h4>Enable module</h4>
+                                            </div>
+                                                
+                                            <div class="col-md-3 module-slide ">
+                                                <mat-slide-toggle>Watermarking</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-3 module-slide">
+                                                <mat-slide-toggle>DRM</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-3 module-slide">
+                                                    <mat-slide-toggle>Q&A</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-3 module-slide">
+                                                    <mat-slide-toggle>Collaboration</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-3 module-slide">
+                                                    <mat-slide-toggle>OCR</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-3 module-slide">
+                                                    <mat-slide-toggle>Editors</mat-slide-toggle>
+                                            </div>
+                                        </div>
+                                        <div class="row rowmrg">
+                                            <div class="col-md-12 module-slide">
+                                                <h4>Apply Account level Branding</h4>
+                                                <mat-slide-toggle class="module-slide">Account level Branding</mat-slide-toggle>
+
+                                            </div>
+                                        </div>
+                                        <div class="row rowmrg addadm">
+                                            <div class="col-md-12">
+                                                    <h4>Add Admin</h4>
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <mat-form-field class="example-full-width">
+                                                            <input matInput #message placeholder="First Name">
+                                                          </mat-form-field>
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <mat-form-field class="example-full-width">
+                                                            <input matInput #message placeholder="Last Name">
+                                                          </mat-form-field>
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <mat-form-field class="example-full-width">
+                                                            <input matInput #message placeholder="Email ID">
+                                                          </mat-form-field>
+                                            </div>
+                                        </div>
+                            </mat-card>
+                                
+                            </mat-tab>
+                        <mat-tab label="Clone an exsting Data Room" class="Active"> 
+                                <mat-card>
+                                        <div class="row">
+                                                <div class="col-md-6">
+                                                        <mat-form-field class="popuptxt">
+                                                                <mat-label>Choose Data Room</mat-label>
+                                                                <mat-select>
+                                                                  <mat-option >
+                                                                    XyZ
+                                                                  </mat-option>
+                                                                </mat-select>
+                                                              </mat-form-field>
+                                                </div>
+                                                <div class="col-md-6">
+                                                        <mat-form-field class="popuptxt">
+                                                                <input matInput type="number" placeholder="Enter Data Room Storage(GB)" min="10">
+                                                              </mat-form-field>
+                                                </div>
+                                                <div class="col-md-12">
+                                                        <mat-form-field class="popuptxt">
+                                                                <input matInput #message placeholder="New Data Room Name">
+                                                              </mat-form-field>
+                                                </div>
+                                                <div class="col-md-6  module-slide">
+                                                        <mat-slide-toggle>Clone with User Groups</mat-slide-toggle>
+                                                </div>
+                                                <div class="col-md-6  module-slide">
+                                                        <mat-slide-toggle>Apply Account level Branding 11</mat-slide-toggle>
+                                                </div>
+                                            </div>
+                                            <div class="row rowmrg">
+                                                <div class="col-md-12 ">
+                                                        <h4>Enable module</h4>
+                                                </div>
+                                                    
+                                                <div class="col-md-3 module-slide ">
+                                                    <mat-slide-toggle>Watermarking</mat-slide-toggle>
+                                                </div>
+                                                <div class="col-md-3 module-slide">
+                                                    <mat-slide-toggle>DRM</mat-slide-toggle>
+                                                </div>
+                                                <div class="col-md-3 module-slide">
+                                                        <mat-slide-toggle>Q&A</mat-slide-toggle>
+                                                </div>
+                                                <div class="col-md-3 module-slide">
+                                                        <mat-slide-toggle>Collaboration</mat-slide-toggle>
+                                                </div>
+                                                <div class="col-md-3 module-slide">
+                                                        <mat-slide-toggle>OCR</mat-slide-toggle>
+                                                </div>
+                                                <div class="col-md-3 module-slide">
+                                                        <mat-slide-toggle>Editors</mat-slide-toggle>
+                                                </div>
+                                            </div>
+                                </mat-card>
+                             </mat-tab>
+                        
+                      </mat-tab-group>
+        </div>
+            
+    </div>
+        
+</div>
+  <div class="row dialog-actions">
+    <div class="col-md-12">
+        <button mat-button (click)="onNoClick()" class="cancelbtn">Cancel</button>
+        <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial class="createbtn">Save</button>
+    </div>
+  </div>

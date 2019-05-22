@@ -1,0 +1,160 @@
+<mat-toolbar class="topbar"  fxLayout="row">
+ <div  fxLayout="row" fxLayoutAlign="space-between center" fxFlex="1 1 0%">
+   <a href="" class="logo" fxLayout="row" fxLayoutAlign="flex-start center"><img src="assets/images/logo.png" alt=""></a>
+   <div fxLayout="row" fxLayoutAlign="flex-end center" class="toolbar">
+      <div class="toolbar-separator"></div>
+      <button mat-button routerLink="/" matTooltip="Home" class="message-button"><i class="material-icons">home</i></button>
+      <div class="toolbar-separator"></div>
+    <button mat-button [matMenuTriggerFor]="menuHelp" matTooltip="Help?" class="message-button"><i class="material-icons">live_help</i></button>
+    <mat-menu #menuHelp="matMenu">
+        <button mat-menu-item>
+          <mat-icon>help_outline</mat-icon>
+          <span>Platform Help Desk</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>
+          <mat-icon>call</mat-icon>
+          <span>Call Us</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>
+          <mat-icon>email</mat-icon>
+          <span>Email Us</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>
+          <mat-icon>chat</mat-icon>
+          <span>Chat with Us</span>
+        </button>
+    </mat-menu>
+    <div class="toolbar-separator"></div>
+    <button mat-button [matMenuTriggerFor]="menuMail" matTooltip="New Messages" class="message-button"><i class="material-icons">mail_outline</i><span class="notification-number mat-bg-warn">8</span></button>
+    <mat-menu #menuMail="matMenu" class="msgs">
+          <div class="drop-menu">
+              <h3 mat-subheader>New Messages</h3>
+            <div class="notification-list ">
+            <perfect-scrollbar style="max-width: 600px; max-height: 400px;" [config]="config">
+                <mat-list role="list">
+                    <mat-list-item role="listitem"> 
+                        <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                        <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                        <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                    </mat-list-item>
+                    <mat-list-item role="listitem"> 
+                        <mat-icon mat-list-icon class="file-icon">file_copy</mat-icon>
+                        <h4 mat-line>Lets Get Started.pdf file was added in Project Arch Dataroom</h4>
+                        <p mat-line>2019-02-20T15:27:37.292295Z</p>
+                    </mat-list-item>
+                    <mat-list-item role="listitem"> 
+                        <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                        <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                        <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                    </mat-list-item>
+                    <mat-list-item role="listitem"> 
+                        <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                        <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                        <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                    </mat-list-item>
+                    <mat-list-item role="listitem"> 
+                        <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                        <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                        <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                    </mat-list-item>
+                    <mat-list-item role="listitem"> 
+                        <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                        <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                        <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                    </mat-list-item>
+                    <mat-list-item role="listitem"> 
+                        <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                        <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                        <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                    </mat-list-item>
+                  </mat-list>
+                  <div class="nofi-btn">
+                    <a href="#">See All Messages</a>
+                  </div>
+            </perfect-scrollbar>
+          </div>
+          </div>
+    </mat-menu>
+    <div class="toolbar-separator"></div>
+    <button mat-button class="notification-button" matTooltip="New Notifications"  [matMenuTriggerFor]="menuNotification"><i class="material-icons">notification_important</i><span class="notification-number mat-bg-warn">5</span></button>
+    <mat-menu #menuNotification="matMenu">
+      <div class="drop-menu">
+          <h3 mat-subheader>New Notifications</h3>
+        <div class="notification-list ">
+        <perfect-scrollbar style="max-width: 600px; max-height: 400px;" [config]="config">
+            <mat-list role="list">
+                <mat-list-item role="listitem"> 
+                    <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                    <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                    <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"> 
+                    <mat-icon mat-list-icon class="file-icon">file_copy</mat-icon>
+                    <h4 mat-line>Lets Get Started.pdf file was added in Project Arch Dataroom</h4>
+                    <p mat-line>2019-02-20T15:27:37.292295Z</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"> 
+                    <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                    <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                    <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"> 
+                    <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                    <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                    <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"> 
+                    <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                    <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                    <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"> 
+                    <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                    <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                    <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"> 
+                    <mat-icon mat-list-icon class="group-icon">group</mat-icon>
+                    <h4 mat-line><a href="">fdfdg</a> group was added in Malay Dataroom</h4> 
+                    <p mat-line>2019-02-26T05:39:09.379574Z</p>
+                </mat-list-item>
+              </mat-list>
+              <div class="nofi-btn">
+                <a href="#">See All Notifications</a>
+              </div>
+        </perfect-scrollbar>
+      </div>
+      </div>
+    </mat-menu>
+    <div class="toolbar-separator"></div>
+    <button mat-button class="user-button" [matMenuTriggerFor]="userSetting">
+      <span class="mat-button-wrapper">
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <img class="avatar" src="assets/images/user4.jpg" alt="">
+          <span class="username">Shivkumar</span>
+          <i class="material-icons">keyboard_arrow_down</i>
+        </div> 
+      </span>
+    </button>
+    <mat-menu #userSetting="matMenu">
+        <button mat-menu-item>
+          <mat-icon>person</mat-icon>
+          <span>Profile</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>live_help</mat-icon>
+          <span>Helpdesk Support</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>
+          <mat-icon>power_settings_new</mat-icon>
+          <span>Sign Out</span>
+        </button>
+        
+    </mat-menu>
+   </div>
+ </div>
+</mat-toolbar>

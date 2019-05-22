@@ -1,0 +1,255 @@
+<app-admin-header></app-admin-header>
+<div class="mycontact-content">
+  <mat-card class="main-content-matcard">
+    <div class="row header-title">
+        <div class="col-md-9">
+          <h4>My Contacts</h4>
+        </div>
+        <div class="col-md-3">
+                <button mat-raised-button class="downlaod">
+                    <mat-icon>cloud_download</mat-icon>
+                    Download Sample Contact CSV
+                </button>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+            <div class="row add-new-cnt">
+                <div class="col-md-4">
+                        <button mat-raised-button class="downlaod">
+                            <mat-icon>import_contacts</mat-icon>
+                            Add New Contact
+                        </button>
+                </div>
+                <div class="col-md-8 txtalgnright">
+                  <p>
+                      Upload Member List from File  <input class="fileupload" type="file">
+                  </p>
+                </div>
+            </div>
+            <div class="row add-member-fm">
+                <div class="col-md-3">
+                    <mat-form-field class="example-full-width">
+                        <input matInput #message placeholder="First Name">
+                        <mat-hint>First Name is required</mat-hint>
+                      </mat-form-field>
+                </div>
+                <div class="col-md-3">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                          <input matInput #message placeholder="Last Name">
+                          <mat-hint>Last Name is required</mat-hint>
+                        </mat-form-field>
+                      </form>
+                </div>
+                <div class="col-md-3">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Email ID" [formControl]="emailFormControl"
+                                 [errorStateMatcher]="matcher">
+                          <mat-hint>Email is required</mat-hint>
+                          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                            Please enter a valid email address
+                          </mat-error>
+                          <mat-error *ngIf="emailFormControl.hasError('required')">
+                            Email is <strong>required</strong>
+                          </mat-error>
+                        </mat-form-field>
+                      </form>
+                </div>
+                <div class="col-md-3 btn-align">
+                    <button type="button" class="addbtn addmem" mat-button>Add Member</button>
+                </div>
+              </div>
+              <div class="row add-group">
+                  <div class="col-md-5">
+                      <mat-form-field class="example-full-width">
+                          <input matInput #message placeholder="Search Number">
+                        </mat-form-field>
+                  </div>
+                  <div class="col-md-4 johndoe_select">
+                      <mat-form-field class="johndoe_dropdown">
+                          <mat-label>John Doe</mat-label>
+                          <mat-select>
+                            <mat-option >
+                                John Doe
+                            </mat-option>
+                            <mat-option >
+                                John Doe
+                              </mat-option>
+                              <mat-option >
+                                  John Doe
+                                </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                  </div>
+                  <div class="col-md-3 btn-align">
+                      <button type="button" class="addbtn" mat-button>Add to Group</button>
+                  </div>
+                </div>
+                      <div class="contct-list">
+                          <table class="table listing-tbl">
+                              <thead>
+                                <tr>
+                                  <th><mat-checkbox></mat-checkbox></th>
+                                  <th>First Name</th>
+                                  <th>Last Name</th>
+                                  <th>Email ID</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><mat-checkbox></mat-checkbox></td>
+                                  <td>Anna </td>
+                                  <td>Sthesia</td>
+                                  <td>pfitza@msn.com</td>
+                                  <td><i class="material-icons del-icon" matTooltip="Delete">
+                                      delete_outline
+                                      </i></td>
+                                </tr>
+                                <tr>
+                                    <td><mat-checkbox></mat-checkbox></td>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                    <td><i class="material-icons del-icon" matTooltip="Delete">
+                                        delete_outline
+                                        </i></td>
+                                  </tr>
+                                  <tr>
+                                      <td><mat-checkbox></mat-checkbox></td>
+                                      <td>Gail</td>
+                                      <td>Turner</td>
+                                      <td>hyper@outlook.com</td>
+                                      <td><i class="material-icons del-icon" matTooltip="Delete">
+                                          delete_outline
+                                          </i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><mat-checkbox></mat-checkbox></td>
+                                        <td>Shonda</td>
+                                        <td>Leer</td>
+                                        <td>john@example.com</td>
+                                        <td><i class="material-icons del-icon" matTooltip="Delete">
+                                            delete_outline
+                                            </i></td>
+                                      </tr>
+                                      <tr>
+                                          <td><mat-checkbox></mat-checkbox></td>
+                                          <td>Poppa </td>
+                                          <td>Cherry</td>
+                                          <td>hyper@outlook.com</td>
+                                          <td><i class="material-icons del-icon" matTooltip="Delete">
+                                              delete_outline
+                                              </i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><mat-checkbox></mat-checkbox></td>
+                                            <td>Peter</td>
+                                            <td>Pants</td>
+                                            <td>john@example.com</td>
+                                            <td><i class="material-icons del-icon" matTooltip="Delete">
+                                                delete_outline
+                                                </i></td>
+                                          </tr>
+                                          <tr>
+                                              <td><mat-checkbox></mat-checkbox></td>
+                                              <td>Bud </td>
+                                              <td>Graham</td>
+                                              <td>john@example.com</td>
+                                              <td><i class="material-icons del-icon" matTooltip="Delete">
+                                                  delete_outline
+                                                  </i></td>
+                                            </tr>
+                                            <tr>
+                                                <td><mat-checkbox></mat-checkbox></td>
+                                                <td>John</td>
+                                                <td>Christmas</td>
+                                                <td>john@example.com</td>
+                                                <td><i class="material-icons del-icon" matTooltip="Delete">
+                                                    delete_outline
+                                                    </i></td>
+                                              </tr>
+                              </tbody>
+                            </table>
+                      </div>
+                            
+        </div>
+        <div class="col-md-3 mycnt-sidebar">
+            <div class="row add-grp-nm">
+                <div class="col-md-12">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                          <input matInput #message placeholder="Create Group">
+                          <mat-hint>Group Name is required</mat-hint>
+                        </mat-form-field>
+                      </form>
+                        <br>
+                      <button type="button" class="addbtn" mat-button>Add</button>
+                    </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <mat-list  class="member-list">
+                          <mat-list-item class="mycontact_leftside">
+                            <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                            <p mat-line class="Active">All Members</p>
+                          </mat-list-item>
+                          <mat-list-item class="mycontact_leftside">
+                              <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                              <p mat-line>Stefanie Marsh</p>
+                            </mat-list-item>
+                            <mat-list-item class="mycontact_leftside">
+                                <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                <p mat-line>Alexandria Forbes</p>
+                              </mat-list-item>
+                              <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Ritesh Deshmukh</p>
+                                </mat-list-item>
+                                <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Genelia Roshan</p>
+                                </mat-list-item>
+                                <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Stefanie Marsh</p>
+                                </mat-list-item>
+                                <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Alexandria Forbes</p>
+                                </mat-list-item>
+                                <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Ritesh Deshmukh</p>
+                                </mat-list-item>
+                                <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Genelia Roshan</p>
+                                </mat-list-item>
+                                <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Ritesh Deshmukh</p>
+                                </mat-list-item>
+                                <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Stefanie Marsh</p>
+                                </mat-list-item>
+                                <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Ritesh Deshmukh</p>
+                                </mat-list-item>
+                                <mat-list-item class="mycontact_leftside">
+                                  <mat-icon mat-list-icon>keyboard_arrow_right</mat-icon>
+                                  <p mat-line>Genelia Roshan</p>
+                                </mat-list-item>
+                          </mat-list>
+                    </div>
+              </div>
+        </div>
+      </div>
+  </mat-card>
+      <app-footer></app-footer>
+      
+ 

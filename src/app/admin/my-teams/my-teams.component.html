@@ -1,0 +1,276 @@
+<app-admin-header></app-admin-header>
+<div class="myteam-content">
+  <mat-card class="main-content-matcard">
+    <div class="row header-title">
+        <div class="col-md-12">
+          <h4>My Teams</h4>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-9 team-tabs">
+            <mat-tab-group class="myteam-tabs"  mat-align-tabs="left">
+                <mat-tab label="Overview" >
+                    <div class="overview-content">
+                        <mat-card>
+                          <div class="overview-datarm">
+                            <div class="row">
+                                <div class="col-md-8">
+                                  <h5>Data Rooms</h5>
+                                  <p>2 active (0 remaining)</p>
+                                </div>
+                              </div>
+                            <div class="row dataroomsrow">
+                                  <div class="col-md-9">
+                                      <mat-list>
+                                          <mat-list-item >
+                                              <mat-icon mat-list-icon class="cyellow">data_usage</mat-icon>
+                                            <h6 mat-line>Axatshiv</h6>
+                                            <p mat-line> Size: 35.9 MB </p>
+                                          </mat-list-item>
+                                          </mat-list>
+                                  </div>
+                                  <div class="col-md-3 txtalgnright">
+                                      <i class="material-icons editdricon" (click)="openDialog3()">edit</i>
+                                      <p>Last updated Mar 4, 2019</p>
+                                  </div>
+                                </div>
+                                <div class="row dataroomsrow">
+                                    <div class="col-md-9">
+                                        <mat-list>
+                                            <mat-list-item >
+                                                <mat-icon mat-list-icon class="cyellow">data_usage</mat-icon>
+                                              <h6 mat-line>Axatshiv</h6>
+                                              <p mat-line> Size: 35.9 MB </p>
+                                            </mat-list-item>
+                                            </mat-list>
+                                    </div>
+                                    <div class="col-md-3 txtalgnright">
+                                        <i class="material-icons editdricon" (click)="openDialog3()">edit</i>
+                                        <p>Last updated Mar 4, 2019</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                  <div class="overview-mem">
+                                      <div class="row ">
+                                          <div class="col-md-8">
+                                            <h5>Members</h5>
+                                            <p>3 of 3 (0 remaining)</p>
+                                          </div>
+                                        </div>
+                                        <div class="row dataroomsrow">
+                                            <div class="col-md-12">
+                                                <mat-list>
+                                                    <mat-list-item >
+                                                        <img mat-list-icon  alt="" class="person-img" src="assets/images/person.jpg">
+                                                      <h6 mat-line>Axatshiv</h6>
+                                                    </mat-list-item>
+                                                    </mat-list>
+                                            </div>
+                                        </div>
+                                        <div class="row dataroomsrow">
+                                            <div class="col-md-12">
+                                                <mat-list>
+                                                    <mat-list-item >
+                                                        <img mat-list-icon  alt="" class="person-img" src="assets/images/default-img.jpg">
+                                                      <h6 mat-line>Stefanie Marsh</h6>
+                                                    </mat-list-item>
+                                                    </mat-list>
+                                            </div>
+                                          </div>
+                                          <div class="row dataroomsrow">
+                                              <div class="col-md-12">
+                                                  <mat-list>
+                                                      <mat-list-item >
+                                                          <img mat-list-icon  alt="" class="person-img" src="assets/images/default-img.jpg">
+                                                        <h6 mat-line>Stefanie Marsh</h6>
+                                                      </mat-list-item>
+                                                      </mat-list>
+                                              </div>
+                                            </div>
+                                  </div>
+                          </mat-card>
+                          </div>
+                </mat-tab>
+                <mat-tab label="Dataroom"> 
+                    <div class="dataroom-content">
+                        <mat-card>
+                        <div class="row">
+                          <div class="col-md-8">
+                            <h5>Data Rooms</h5>
+                            <p>2 active (0 remaining)</p>
+                          </div>
+                          <div class="col-md-4 datarm-btn">
+                              <button type="button" class="addbtn" mat-button mat-raised-button (click)="openDialog2()"><i class="material-icons plus-icon">
+                                  add_circle_outline
+                                  </i> New Dataroom</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                              <mat-form-field appearance="standard" class="popuptxt">
+                                  <mat-label>Search Dataroom By ID</mat-label>
+                                  <input matInput placeholder="Placeholder">
+                                  <mat-icon class="filter-icon" matSuffix>filter_list</mat-icon>
+                                </mat-form-field>
+                          </div>
+                        </div>
+                        <div class="row dataroomsrow">
+                          <div class="col-md-9">
+                              <mat-list>
+                                  <mat-list-item >
+                                      <mat-icon mat-list-icon class="cyellow">data_usage</mat-icon>
+                                    <h6 mat-line>Axatshiv</h6>
+                                    <p mat-line> Size: 35.9 MB </p>
+                                  </mat-list-item>
+                                  </mat-list>
+                          </div>
+                          <div class="col-md-3 txtalgnright">
+                              <i class="material-icons editdricon" (click)="openDialog3()">edit</i>
+                              <p>Last updated Mar 4, 2019</p>
+                          </div>
+                        </div>
+                        <div class="row dataroomsrow">
+                            <div class="col-md-9">
+                                <mat-list>
+                                    <mat-list-item >
+                                        <mat-icon mat-list-icon class="cyellow">data_usage</mat-icon>
+                                      <h6 mat-line>Axatshiv</h6>
+                                      <p mat-line> Size: 35.9 MB </p>
+                                    </mat-list-item>
+                                    </mat-list>
+                            </div>
+                            <div class="col-md-3 txtalgnright">
+                                <i class="material-icons editdricon"  (click)="openDialog3()">edit</i>
+                                <p>Last updated Mar 4, 2019</p>
+                            </div>
+                          </div>
+                        </mat-card>
+                        </div>
+                </mat-tab>
+                <mat-tab label="Members"> 
+                    <div class="members-content">
+                        <mat-card>
+                        <div class="row">
+                          <div class="col-md-8">
+                            <h5>Members</h5>
+                            <p>3 of 3 (0 remaining)</p>
+                          </div>
+                          <div class="col-md-4 mem-btn">
+                              <button type="button" class="addbtn" mat-button mat-raised-button (click)="openDialog()"><i class="material-icons plus-icon">
+                                  add_circle_outline
+                                  </i> New Member</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <table class="table members-listing-tbl listing-tbl">
+                                <thead>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>Email ID</th>
+                                    <th>Invitation Status</th>
+                                    <th>Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>John</td>
+                                    <td>john@example.com</td>
+                                    <td><span>Active</span></td>
+                                    <td><i class="material-icons del-icon" matTooltip="Delete">
+                                        delete_outline
+                                        </i></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Mary</td>
+                                    <td>mary@example.com</td>
+                                    <td><span>Active</span></td>
+                                    <td><i class="material-icons del-icon" matTooltip="Delete">
+                                        delete_outline
+                                        </i></td>
+                                   
+                                  </tr>
+                                  <tr>
+                                    <td>July</td>
+                                    <td>july@example.com</td>
+                                    <td><span>Active</span></td>
+                                    <td><i class="material-icons del-icon" matTooltip="Delete">
+                                        delete_outline
+                                        </i></td>
+                                    
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                      </mat-card>
+                      </div>
+      </mat-tab>
+                  </mat-tab-group>
+          </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12 txtalgnright">
+              <div class="create-team">
+                  <button type="button" class="create-tm-btn" mat-button mat-raised-button (click)="openDialog1()">Create New Team</button>
+              </div>
+          </div>
+        
+      </div>
+      <div class="row team-list">
+          <div>
+              <mat-list role="list">
+                  <mat-list-item role="listitem" >
+                    <i class="material-icons">device_hub</i><span class="Active">arc 1</span>
+                  </mat-list-item>
+                  <mat-list-item role="listitem">
+                      <i class="material-icons">device_hub</i><span>XYZ</span>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <i class="material-icons">device_hub</i><span>ABC Group</span>
+                      </mat-list-item>
+                      <mat-list-item role="listitem">
+                          <i class="material-icons">device_hub</i><span>Test 1</span>
+                        </mat-list-item>
+                        <mat-list-item role="listitem">
+                            <i class="material-icons">device_hub</i><span>CDR New Team</span>
+                          </mat-list-item>
+                          <mat-list-item role="listitem">
+                              <i class="material-icons">device_hub</i><span>OT Team</span>
+                            </mat-list-item>
+                            <mat-list-item role="listitem">
+                                <i class="material-icons">device_hub</i><span>Sneha Team</span>
+                              </mat-list-item>
+                              <mat-list-item role="listitem">
+                                  <i class="material-icons">device_hub</i><span>AXAT</span>
+                                </mat-list-item>
+                                <mat-list-item role="listitem">
+                                    <i class="material-icons">device_hub</i><span>AXAT</span>
+                                  </mat-list-item>
+                                  <mat-list-item role="listitem">
+                                      <i class="material-icons">device_hub</i><span>axat</span>
+                                    </mat-list-item>
+                                    <mat-list-item role="listitem">
+                                        <i class="material-icons">device_hub</i><span>demo</span>
+                                      </mat-list-item>
+                                      <mat-list-item role="listitem">
+                                          <i class="material-icons">device_hub</i><span>123</span>
+                                        </mat-list-item>
+                                        <mat-list-item role="listitem">
+                                            <i class="material-icons">device_hub</i><span>CDMS</span>
+                                          </mat-list-item>
+                                          <mat-list-item role="listitem">
+                                              <i class="material-icons">device_hub</i><span>CDMS Team</span>
+                                            </mat-list-item>
+                                            <mat-list-item role="listitem">
+                                                <i class="material-icons">device_hub</i><span>Team 2</span>
+                                              </mat-list-item>
+                </mat-list>
+          </div>
+        </div>
+      </div>
+      </div>
+</mat-card>
+</div>
+<app-footer></app-footer>
+  
+ 
+

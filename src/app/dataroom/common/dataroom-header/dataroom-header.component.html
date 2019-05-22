@@ -1,0 +1,55 @@
+<app-header></app-header>
+<mat-card class="admin-header-card"> 
+  <div class="row">
+    <div class="col-md-12 text-center">
+        <ul class="admin-header-menu">
+            <li class="Active">
+               <button type="button" routerLink="/overview" class="dashboard-btn admin-head-btn Active" mat-button>
+                <mat-icon class="example-tab-icon header-icons Active">dashboard</mat-icon>Overview</button>
+              </li>
+            <li > 
+              <button type="button" routerLink="/documents" class="admin-head-btn" mat-button>
+                <mat-icon class="example-tab-icon header-icons" >contacts</mat-icon>
+                Documents </button>
+            </li>
+            <li >
+               <button type="button" routerLink="/user&permission" class="admin-head-btn" mat-button> 
+                <mat-icon class="example-tab-icon header-icons">people</mat-icon>User & Permission</button>
+              </li>
+              <li >
+                  <button type="button" routerLink="/updates" class="admin-head-btn" mat-button>
+                   <mat-icon class="example-tab-icon header-icons">autorenew</mat-icon>Updates</button>
+                 </li>
+                 <li >
+                    <button type="button" routerLink="/Q&A" class="admin-head-btn" mat-button>
+                     <mat-icon class="example-tab-icon header-icons">help_outline</mat-icon>Q&A</button>
+                   </li>
+                   <li >
+                      <button type="button" routerLink="/reports" class="admin-head-btn" mat-button>
+                       <mat-icon class="example-tab-icon header-icons">report</mat-icon>Reports</button>
+                     </li>
+          </ul>
+    </div>
+  </div>
+</mat-card>
+    <mat-card class="dataroom-comn-header">
+      <div class="row dtrm-header-title">
+        <div class="col-md-8">
+          <p>
+             <img src="assets/images/AXAT-logo.png">
+              <span class="cmpny-title">AXAT Technologies</span>
+            <button mat-button mat-raised-button (click)="openDialog()" class="btn editdatarm-btn">
+                Edit Dataroom
+                <mat-icon class="btn-icon">create</mat-icon>
+            </button> 
+            <button mat-button routerLink="/manage-admin-group" class="btn prcont-btn">
+                Primary Contact
+                <mat-icon class="btn-icon">account_circle</mat-icon>
+            </button>
+          </p>
+        </div>
+        <div class="col-md-4 btn-align">
+           <p><span class="dtrmstage">Dataroom Stage: </span> Hold <mat-slide-toggle class="datastagetoggle"></mat-slide-toggle>Live </p>
+          </div>
+      </div>
+      </mat-card>

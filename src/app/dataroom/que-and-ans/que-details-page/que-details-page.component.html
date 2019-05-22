@@ -1,0 +1,73 @@
+<app-dataroom-header></app-dataroom-header>
+<div class="main-overview-content">
+        <mat-card class="main-content-matcard">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="left-content">
+                        <mat-list role="list" class="queans-list">
+                            <mat-list-item role="listitem" >
+                              <i class="material-icons">forum</i> <span class="heading-txt">Total Questions</span>
+                              <span class="text-right count-txt">500</span>
+                            </mat-list-item>
+                            <mat-list-item role="listitem" >
+                                <i class="material-icons">done_all</i> <span class="heading-txt">Answered</span>
+                                <span class="text-right count-txt">500</span>
+                              </mat-list-item>
+                              <mat-list-item role="listitem" >
+                                <i class="material-icons">error</i> <span class="heading-txt">Pending</span>
+                                <span class="text-right count-txt">500</span>
+                              </mat-list-item>
+                              <mat-list-item role="listitem" >
+                                <i class="material-icons">check</i> <span class="heading-txt">Answer</span>
+                                <span class="text-right count-txt">1000</span>
+                              </mat-list-item>
+                              <!-- <mat-list-item role="listitem" >
+                                <i class="material-icons">help_outline</i> <span class="heading-txt">FAQ</span>
+                                <span class="text-right count-txt">600</span>
+                              </mat-list-item> -->
+                            </mat-list>
+                            <div class="categories">
+                                <div class="cat-header p-3">
+                                    <h4>Categories</h4>
+                                </div>
+                            <mat-list>
+                                <mat-list-item>
+                                <mat-checkbox>General</mat-checkbox>
+                                </mat-list-item>
+                                <mat-list-item>
+                                <mat-checkbox>Assigned to me</mat-checkbox>
+                                </mat-list-item>
+                                <mat-list-item>
+                                <mat-checkbox>Replied To</mat-checkbox>
+                                </mat-list-item>
+                            </mat-list>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-12 mt-4 text-center">
+                                            <p><button mat-button mat-raised-button routerLink="/manage-categories" class="createbtn qa-btn">Manage Categories</button></p> 
+                                             <!-- <p><button mat-button mat-raised-button class="createbtn qa-btn">Manage FAQ</button></p> -->
+                                     </div>
+                            </div>
+                            
+                    </div>
+                    
+                </div>
+                <div class="col-md-9">
+                        <div class="right-content">
+                          <div class="">
+                              <h3>Q & A</h3>
+                              <span class="text-right"><button mat-button class="createbtn"onclick="history.go(-1)">Back</button></span>
+                          </div>
+                          <div class=" text-right">
+                              <button mat-button class="createbtn"onclick="history.go(-1)">Back</button>
+                          </div>
+                            
+
+
+                           
+                        </div>
+                    </div>
+            </div>
+            </mat-card>
+            </div>
+<app-footer></app-footer>

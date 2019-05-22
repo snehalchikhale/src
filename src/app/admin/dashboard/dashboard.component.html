@@ -1,0 +1,237 @@
+<app-admin-header></app-admin-header>
+<mat-card class="dashmatcard">
+<div fxLayout="row wrap" >
+    <div class="p-2" fxFlex="100" fxFlex.gt-sm="66.666667">
+        <mat-card class="card-common search-filter">
+            <mat-card-header fxLayout="row" fxLayoutAlign="space-between" fxFlexAlign="center" class="dash-header">
+                <mat-card-title class="dr-title">Data Rooms</mat-card-title>
+                <mat-form-field appearance="standard">
+                        <mat-label>Search By Name</mat-label>
+                        <input matInput placeholder="Placeholder">
+                        <mat-icon class="filter-icon" matSuffix>filter_list</mat-icon>
+                      </mat-form-field>
+                <!-- <button mat-raised-button class="blue-btn"><mat-icon>add</mat-icon> Data Room</button> -->
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+            <perfect-scrollbar style="max-height: 325px;" [config]="config">
+                <mat-list role="list">
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25"> 
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span fxLayoutAlign="left center" class="fw500 cursor-pointer" routerLink="/overview">Stefanie Marsh</span>
+                        </span>
+                        <span class="dataRoomDocument" fxLayout="row">  
+                            Document: 10
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center"> 
+                                <mat-chip-list>
+                                    <mat-chip class="active">Live</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25">
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span routerLink="/overview" class="fw500 cursor-pointer" fxLayoutAlign="left center">Elena Bennett</span>
+                        </span>
+                        <span class="dataRoomDocument">  
+                            Document: 10
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center">
+                                <mat-chip-list>
+                                    <mat-chip class="inactive">hold</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25">
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span routerLink="/overview" class="fw500 cursor-pointer" fxLayoutAlign="left center">Joni Cabrera</span>
+                        </span>
+                        <span class="dataRoomDocument">  
+                            Document: 10
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center">
+                                <mat-chip-list>
+                                    <mat-chip class="active">Live</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25">
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span routerLink="/overview" class="fw500 cursor-pointer" fxLayoutAlign="left center">Gallagher Shaw</span>
+                        </span>
+                        <span class="dataRoomDocument">  
+                            Document: 15
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center">
+                                <mat-chip-list>
+                                    <mat-chip class="inactive">hold</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25">
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span routerLink="/overview" class="fw500 cursor-pointer" fxLayoutAlign="left center">Blanchard Knapp</span>
+                        </span>
+                        <span class="dataRoomDocument">  
+                            Document: 10
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center">
+                                <mat-chip-list>
+                                    <mat-chip class="active">Live</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25">
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span routerLink="/overview" class="fw500 cursor-pointer" fxLayoutAlign="left center">Parker Rivas</span>
+                        </span>
+                        <span class="dataRoomDocument">  
+                            Document: 100
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center">
+                                <mat-chip-list>
+                                    <mat-chip class="inactive">hold</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25">
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span routerLink="/overview" class="fw500 cursor-pointer" fxLayoutAlign="left center">Alexandria Forbes</span>
+                        </span>
+                        <span class="dataRoomDocument">  
+                            Document: 10
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center">
+                                <mat-chip-list>
+                                    <mat-chip class="active">Live</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25">
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span routerLink="/overview" class="fw500 cursor-pointer" fxLayoutAlign="left center">Lessie Wise</span>
+                        </span>
+                        <span class="dataRoomDocument">  
+                            Document: 10
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center">
+                                <mat-chip-list>
+                                    <mat-chip class="inactive">hold</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25">
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span routerLink="/overview" class="fw500 cursor-pointer" fxLayoutAlign="left center">Lessie Wise</span>
+                        </span>
+                        <span class="dataRoomDocument">  
+                            Document: 10
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center">
+                                <mat-chip-list>
+                                    <mat-chip class="inactive">hold</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <span class="dataRoomName" fxLayout="row" fxFlex="100" fxFlex.gt-sm="25">
+                            <i class="material-icons mr5 cyellow">data_usage</i> <span routerLink="/overview" class="fw500 cursor-pointer" fxLayoutAlign="left center">Lessie Wise</span>
+                        </span>
+                        <span class="dataRoomDocument">  
+                            Document: 10
+                        </span>
+                        <div class="drToolbar" fxLayout="row" fxFlexOffset="auto" fxLayoutAlign="flex-end center">
+                                <mat-chip-list>
+                                    <mat-chip class="inactive">hold</mat-chip>
+                                </mat-chip-list>
+                                <button mat-button matTooltip="Delete"><i class="material-icons">delete_outline</i></button>
+                                <button mat-button matTooltip="Edit" (click)="openDialog()"><i class="material-icons">edit</i></button>
+                                <button mat-button matTooltip="Archive"><i class="material-icons">archive</i></button>
+                        </div>
+                    </mat-list-item>
+                    
+                </mat-list>
+                </perfect-scrollbar>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="p-2" fxFlex="100" fxFlex.gt-sm="33.333333">
+        <mat-card class="card-common access-history">
+            <mat-card-header fxLayout="row" fxLayoutAlign="space-between" fxFlexAlign="center">
+                <mat-card-title>Access History</mat-card-title>
+                <div class="drToolbar">
+                    <button mat-button><i class="material-icons">refresh</i></button>
+                </div>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content class="access_historydetails">
+            <perfect-scrollbar style="max-height: 330px;" [config]="config">
+                    <div class="example-container mat-elevation-z8">
+                        <table mat-table [dataSource]="dataSource">
+                        
+                            <!-- Position Column -->
+                            <ng-container matColumnDef="loggedin">
+                            <th mat-header-cell *matHeaderCellDef> Logged in </th>
+                            <td mat-cell *matCellDef="let element"> {{element.loggedin}} </td>
+                            </ng-container>
+                        
+                            <!-- Name Column -->
+                            <ng-container matColumnDef="ipadd">
+                            <th mat-header-cell *matHeaderCellDef> IP Address </th>
+                            <td mat-cell *matCellDef="let element"> {{element.ipadd}} </td>
+                            </ng-container>
+                            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                        </table>
+                        </div>
+            </perfect-scrollbar>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="p-2" fxFlex="100" fxLayput="row" >
+        <mat-card class="card-common">
+            <mat-card-header fxLayout="row" fxLayoutAlign="space-between" fxFlexAlign="center">
+                <mat-card-title>Data Rooms Allocation & Data Usage</mat-card-title>
+                <div class="drToolbar">
+                        <button mat-button><i class="material-icons">refresh</i></button>
+                 
+                </div>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <div class="chart-img">
+                <img src="assets/images/chart-img.jpg" class="img-responsive" alt=""> 
+            </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+</mat-card>
+<app-footer></app-footer>

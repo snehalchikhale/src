@@ -1,0 +1,8 @@
+tr.mat-header-row {
+    height: 30px;
+    background-color: #e8f9ff;
+}
+
+tr.mat-footer-row, tr.mat-row {
+    height: 40px;
+}

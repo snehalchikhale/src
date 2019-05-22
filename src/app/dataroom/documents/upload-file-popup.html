@@ -1,0 +1,26 @@
+<div class="upload-file-popup">
+        <h4 class="mb-4">Upload File</h4>
+        <div mat-dialog-content>
+                <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="file-upload">
+                            <div class="drag-area">
+                                    <i class="material-icons">
+                                            backup
+                                            </i>
+                                <p>Drag a File Here</p>
+                            </div>
+                            <p>or</p>
+                            <div class="">
+                                    <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial class="createbtn">Select a file from your Computer</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+          <div class="row dialog-actions mb-0">
+            <div class="col-md-12 pb-1 ">
+                <button mat-button (click)="onNoClick()" class="cancelbtn">Back</button>
+            </div>
+          </div>
+</div>

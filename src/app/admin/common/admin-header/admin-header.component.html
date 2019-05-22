@@ -1,0 +1,22 @@
+<app-header></app-header>
+<mat-card class="admin-header-card"> 
+  <div class="row">
+    <div class="col-md-12" style="text-align:center;">
+        <ul class="admin-header-menu">
+            <li class="Active">
+               <button type="button" routerLink="" class="dashboard-btn admin-head-btn Active" mat-button>
+                <mat-icon class="example-tab-icon Active">dashboard</mat-icon>Dashboard</button>
+              </li>
+            <li > 
+              <button type="button" routerLink="/my-contacts" class="admin-head-btn" mat-button>
+                <mat-icon class="example-tab-icon" >contacts</mat-icon>
+                My Contacts </button>
+            </li>
+            <li >
+               <button type="button" routerLink="/my-team" class="admin-head-btn" mat-button>
+                <mat-icon class="example-tab-icon">people</mat-icon>My Teams</button>
+              </li>
+          </ul>
+    </div>
+  </div>
+</mat-card>

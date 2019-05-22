@@ -1,0 +1,327 @@
+<app-dataroom-header></app-dataroom-header>
+<div class="main-overview-content">
+    <mat-card class="main-content-matcard">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="all-doc">
+                    <div class="cat-header p-3">
+                        <h4>All Documents</h4>
+                    </div>
+                <mat-list>
+                    <mat-list-item role="listitem" class="all-documnets" >
+                        <i class="material-icons">
+                                keyboard_arrow_right
+                            </i>
+                            <span class="doc_leftmenu">Documents</span>
+                    </mat-list-item>
+                    <mat-list-item role="listitem" >
+                        <i class="material-icons">
+                                keyboard_arrow_right
+                            </i>
+                            <span class="doc_leftmenu">Shiv</span>
+                      </mat-list-item>
+                    
+                </mat-list>
+                </div>
+                <div class="left-content">
+                    <mat-list role="list" class="queans-list categories">
+                        <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                insert_drive_file
+                                </i>
+                                <span class="heading-txt">Pages</span>
+                          <span class="text-right count-txt">46</span>
+                        </mat-list-item>
+                        <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                folder_open
+                                </i>
+                                <span class="heading-txt">Documents</span>
+                            <span class="text-right count-txt">21</span>
+                          </mat-list-item>
+                          <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                insert_drive_file
+                                </i>
+                                <span class="heading-txt">Storage Occupied</span>
+                          <span class="text-right count-txt">37 MB</span>
+                          </mat-list-item>
+                        </mat-list>
+                        
+                    <mat-list role="list" class="queans-list categories">
+                        <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                folder_open
+                                </i>
+                                <span class="doc_leftmenu" routerLink="/recent-document">Recent Documents</span>
+                        </mat-list-item>
+                        <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                publish
+                                </i>
+                                <span class="doc_leftmenu" routerLink="/upload-status">Upload Status</span>
+                          </mat-list-item>
+                          <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                visibility
+                                </i>
+                                <span class="doc_leftmenu" routerLink="/not-view-doc">Not Viewed/Viewed</span>
+                          </mat-list-item>
+                          <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                print
+                                </i>
+                                <span class="doc_leftmenu" routerLink="/not-print-doc">Not Printed/Pritnted</span>
+                          </mat-list-item>
+                          <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                get_app
+                                </i>
+                                <span class="doc_leftmenu" routerLink="/download">Not Downloaded/ Downloaded</span>
+                          </mat-list-item>
+                          <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                info
+                                </i>
+                                <span class="doc_leftmenu" routerLink="/indexs-report">Index Report</span>
+                          </mat-list-item>
+                          <mat-list-item role="listitem" >
+                            <i class="material-icons">
+                                delete_outline
+                                </i>
+                                <span class="doc_leftmenu" routerLink="/trash-doc">Trash</span>
+                          </mat-list-item>
+                          <!-- <mat-list-item role="listitem" >
+                            <i class="material-icons">help_outline</i> <span class="heading-txt">FAQ</span>
+                            <span class="text-right count-txt">600</span>
+                          </mat-list-item> -->
+                        </mat-list>
+                        
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="table_sections doc-tbl">
+                    <div class="recnt-doc">
+                        <h4 >All Not Downloaded Documents</h4>
+                      </div>
+                      <div class="doc-breadcrum tbl-header">
+                        <div class="row">
+                          <div class="col-md-8 sub-txt">
+                              <h5 class="p-0">All Documents > All Not Downloaded Documents</h5>
+                          </div>
+                          <div class="col-md-4 text-right">
+                              <mat-form-field>
+                                  <mat-label>Select</mat-label>
+                                  <mat-select>
+                                    <mat-option>Downloaded File</mat-option>
+                                    <mat-option>Not Downloaded File</mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                          </div>
+                        </div>
+                         
+                      </div>
+                <table class="table listing-tbl doc_tble">
+                        <thead>
+                          <tr>
+                            <th><mat-checkbox></mat-checkbox></th>
+                            <th>Index</th>
+                            <th>Documents</th>
+                            <th>Containing Folders</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><mat-checkbox></mat-checkbox></td>
+                            <td>4.0.1</td>
+                            <td>
+                                    <i class="material-icons blue_icons">folder_open</i>
+                                        <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                            <td>AXAT Profile</td>
+                            <td>March 28, 2019 (12:19:02)</td>
+                            <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                more_vert
+                                </i></button>
+                            <mat-menu #menu="matMenu" class="text-center">
+                            <button mat-menu-item routerLink="/">Download</button>
+                            <button mat-menu-item routerLink="/">Print</button>
+                            <button mat-menu-item routerLink="/">Delete</button></mat-menu></td>
+                          </tr>
+                          <tr>
+                              <td><mat-checkbox></mat-checkbox></td>
+                              <td>2.0.1</td>
+                              <td>
+                                      <i class="material-icons blue_icons">folder_open</i>
+                                          <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                              <td>AXAT Profile</td>
+                              <td>March 18, 2019 (12:19:02)</td>
+                              <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                  more_vert
+                                  </i></button>
+                                  <mat-menu #menu="matMenu" class="text-center">
+                                      <button mat-menu-item routerLink="/">Download</button>
+                                      <button mat-menu-item routerLink="/">Print</button>
+                                      <button mat-menu-item routerLink="/">Delete</button></mat-menu></td>
+                            </tr>
+                            <tr>
+                                <td><mat-checkbox></mat-checkbox></td>
+                                <td>2.0.1</td>
+                                <td>
+                                        <i class="material-icons blue_icons">folder_open</i>
+                                            <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                                <td>AXAT Profile</td>
+                                <td>March 18, 2019 (12:19:02)</td>
+                                <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                    more_vert
+                                    </i></button>
+                                <mat-menu #menu="matMenu" class="text-center">
+                                <button mat-menu-item routerLink="/">Edit Index</button>
+                                <button mat-menu-item routerLink="/">Edit Name</button>
+                                <button mat-menu-item routerLink="/">Download</button>
+                                <button mat-menu-item routerLink="/">Delete</button>
+                                <button mat-menu-item routerLink="/">Copy</button>
+                                <button mat-menu-item routerLink="/">Move</button></mat-menu></td>
+                              </tr>
+                              <tr>
+                                  <td><mat-checkbox></mat-checkbox></td>
+                                  <td>2.0.1</td>
+                                  <td>
+                                          <i class="material-icons blue_icons">folder_open</i>
+                                              <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                                  <td>AXAT Profile</td>
+                                  <td>March 18, 2019 (12:19:02)</td>
+                                  <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                      more_vert
+                                      </i></button>
+                                  <mat-menu #menu="matMenu" class="text-center">
+                                  <button mat-menu-item routerLink="/">Edit Index</button>
+                                  <button mat-menu-item routerLink="/">Edit Name</button>
+                                  <button mat-menu-item routerLink="/">Download</button>
+                                  <button mat-menu-item routerLink="/">Delete</button>
+                                  <button mat-menu-item routerLink="/">Copy</button>
+                                  <button mat-menu-item routerLink="/">Move</button></mat-menu></td>
+                                </tr>
+                                <tr>
+                                    <td><mat-checkbox></mat-checkbox></td>
+                                    <td>2.0.1</td>
+                                    <td>
+                                            <i class="material-icons blue_icons">folder_open</i>
+                                                <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                                    <td>AXAT Profile</td>
+                                    <td>March 18, 2019 (12:19:02)</td>
+                                    <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                        more_vert
+                                        </i></button>
+                                    <mat-menu #menu="matMenu" class="text-center">
+                                    <button mat-menu-item routerLink="/">Edit Index</button>
+                                    <button mat-menu-item routerLink="/">Edit Name</button>
+                                    <button mat-menu-item routerLink="/">Download</button>
+                                    <button mat-menu-item routerLink="/">Delete</button>
+                                    <button mat-menu-item routerLink="/">Copy</button>
+                                    <button mat-menu-item routerLink="/">Move</button></mat-menu></td>
+                                  </tr>
+                                  <tr>
+                                      <td><mat-checkbox></mat-checkbox></td>
+                                      <td>2.0.1</td>
+                                      <td>
+                                              <i class="material-icons blue_icons">folder_open</i>
+                                                  <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                                      <td>AXAT Profile</td>
+                                      <td>March 18, 2019 (12:19:02)</td>
+                                      <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                          more_vert
+                                          </i></button>
+                                      <mat-menu #menu="matMenu" class="text-center">
+                                      <button mat-menu-item routerLink="/">Edit Index</button>
+                                      <button mat-menu-item routerLink="/">Edit Name</button>
+                                      <button mat-menu-item routerLink="/">Download</button>
+                                      <button mat-menu-item routerLink="/">Delete</button>
+                                      <button mat-menu-item routerLink="/">Copy</button>
+                                      <button mat-menu-item routerLink="/">Move</button></mat-menu></td>
+                                    </tr>
+                                    <tr>
+                                        <td><mat-checkbox></mat-checkbox></td>
+                                        <td>2.0.1</td>
+                                        <td>
+                                                <i class="material-icons blue_icons">folder_open</i>
+                                                    <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                                        <td>AXAT Profile</td>
+                                        <td>March 18, 2019 (12:19:02)</td>
+                                        <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                            more_vert
+                                            </i></button>
+                                        <mat-menu #menu="matMenu" class="text-center">
+                                        <button mat-menu-item routerLink="/">Edit Index</button>
+                                        <button mat-menu-item routerLink="/">Edit Name</button>
+                                        <button mat-menu-item routerLink="/">Download</button>
+                                        <button mat-menu-item routerLink="/">Delete</button>
+                                        <button mat-menu-item routerLink="/">Copy</button>
+                                        <button mat-menu-item routerLink="/">Move</button></mat-menu></td>
+                                      </tr>
+                                      <tr>
+                                          <td><mat-checkbox></mat-checkbox></td>
+                                          <td>2.0.1</td>
+                                          <td>
+                                                  <i class="material-icons blue_icons">folder_open</i>
+                                                      <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                                          <td>AXAT Profile</td>
+                                          <td>March 18, 2019 (12:19:02)</td>
+                                          <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                              more_vert
+                                              </i></button>
+                                          <mat-menu #menu="matMenu" class="text-center">
+                                          <button mat-menu-item routerLink="/">Edit Index</button>
+                                          <button mat-menu-item routerLink="/">Edit Name</button>
+                                          <button mat-menu-item routerLink="/">Download</button>
+                                          <button mat-menu-item routerLink="/">Delete</button>
+                                          <button mat-menu-item routerLink="/">Copy</button>
+                                          <button mat-menu-item routerLink="/">Move</button></mat-menu></td>
+                                        </tr>
+                                        <tr>
+                                            <td><mat-checkbox></mat-checkbox></td>
+                                            <td>2.0.1</td>
+                                            <td>
+                                                    <i class="material-icons blue_icons">folder_open</i>
+                                                        <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                                            <td>AXAT Profile</td>
+                                            <td>March 18, 2019 (12:19:02)</td>
+                                            <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                                more_vert
+                                                </i></button>
+                                            <mat-menu #menu="matMenu" class="text-center">
+                                            <button mat-menu-item routerLink="/">Edit Index</button>
+                                            <button mat-menu-item routerLink="/">Edit Name</button>
+                                            <button mat-menu-item routerLink="/">Download</button>
+                                            <button mat-menu-item routerLink="/">Delete</button>
+                                            <button mat-menu-item routerLink="/">Copy</button>
+                                            <button mat-menu-item routerLink="/">Move</button></mat-menu></td>
+                                          </tr>
+                                          <tr>
+                                              <td><mat-checkbox></mat-checkbox></td>
+                                              <td>2.0.1</td>
+                                              <td>
+                                                      <i class="material-icons blue_icons">folder_open</i>
+                                                          <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
+                                              <td>AXAT Profile</td>
+                                              <td>March 18, 2019 (12:19:02)</td>
+                                              <td><button mat-button [matMenuTriggerFor]="menu" class="action-btn"><i class="material-icons">
+                                                  more_vert
+                                                  </i></button>
+                                              <mat-menu #menu="matMenu" class="text-center">
+                                              <button mat-menu-item routerLink="/">Edit Index</button>
+                                              <button mat-menu-item routerLink="/">Edit Name</button>
+                                              <button mat-menu-item routerLink="/">Download</button>
+                                              <button mat-menu-item routerLink="/">Delete</button>
+                                              <button mat-menu-item routerLink="/">Copy</button>
+                                              <button mat-menu-item routerLink="/">Move</button></mat-menu></td>
+                                            </tr>
+                        </tbody>
+                      </table>
+                      </div>
+            </div>
+        </div>
+    </mat-card>
+</div>
+<app-footer></app-footer>

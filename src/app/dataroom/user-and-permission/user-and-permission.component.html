@@ -1,0 +1,130 @@
+<app-dataroom-header></app-dataroom-header>
+<div class="main-overview-content">
+    <mat-card class="main-content-matcard">
+      <div class="row userper-tabs">
+        <div class="col-md-12">
+          <h4>Group Name: Admin</h4>
+          <p class="mb-0">No. of users: 2</p>
+        </div>
+        <div class="col-md-12 text-center">
+            <ul class="admin-header-menu">
+                <li class="Active">
+                   <button type="button" routerLink="/manage-admin-group" class="dashboard-btn admin-head-btn Active" mat-button>
+                    Admin</button>
+                  </li>
+                <li > 
+                  <button type="button" routerLink="/all-users-list" class="admin-head-btn" mat-button>
+                    UserList</button>
+                </li>
+                <li >
+                   <button type="button" routerLink="/user&permission" class="admin-head-btn" mat-button> 
+                   Manage</button>
+                  </li>
+              </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-4 mb-2 admin-grp">
+            <button mat-button class="btn prcont-btn">
+                LA Admin Group
+                <mat-icon class="btn-icon">add</mat-icon>
+            </button>
+            <mat-form-field class="adm-nm" >
+                <input matInput #message placeholder="LA Admin Name">
+        </mat-form-field>
+            <button mat-button (click)="onNoClick()" class="cancelbtn">Cancel</button>
+            <button mat-button class="createbtn">Save</button>
+        </div>
+        <div class="col-md-12">
+            <table class="table listing-tbl text-center">
+                <thead>
+                  <tr>
+                    <th>Sr.No.</th>
+                    <th>Group Name</th>
+                    <th>No. of Users</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Anna </td>
+                    <td>0</td>
+                    <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">
+                        more_vert
+                        </i></button>
+                    <mat-menu #menu="matMenu" class="text-center">
+                    <button mat-menu-item>Add Member</button>
+                    <button mat-menu-item routerLink="/manage-la-permission" >Manage</button>
+                    <button mat-menu-item>Delete</button></mat-menu></td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>riya </td>
+                      <td>0</td>
+                      <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">
+                          more_vert
+                          </i></button>
+                      <mat-menu #menu="matMenu" class="text-center">
+                      <button mat-menu-item>Add Member</button>
+                      <button mat-menu-item routerLink="/manage-la-permission" >Manage</button>
+                      <button mat-menu-item>Delete</button></mat-menu></td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 mt-4 mb-2 admin-grp">
+              <button mat-button class="btn prcont-btn">
+                  End User Group
+                  <mat-icon class="btn-icon">add</mat-icon>
+              </button>
+              <mat-form-field class="adm-nm" >
+                  <input matInput #message placeholder="End User Group">
+          </mat-form-field>
+              <button mat-button (click)="onNoClick()" class="cancelbtn">Cancel</button>
+              <button mat-button class="createbtn">Save</button>
+          </div>
+          <div class="col-md-12">
+              <table class="table listing-tbl text-center">
+                  <thead>
+                    <tr>
+                      <th>Sr.No.</th>
+                      <th>Group Name</th>
+                      <th>No. of Users</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Anna </td>
+                      <td>0</td>
+                          <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">
+                              more_vert
+                              </i></button>
+                          <mat-menu #menu="matMenu" class="text-center">
+                          <button mat-menu-item>Add Member</button>
+                          <button mat-menu-item routerLink="/manage-la-permission" >Manage</button>
+                          <button mat-menu-item>Delete</button></mat-menu></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>riya </td>
+                        <td>0</td>
+                        <td><button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">
+                            more_vert
+                            </i></button>
+                        <mat-menu #menu="matMenu" class="text-center">
+                        <button mat-menu-item>Add Member</button>
+                        <button mat-menu-item routerLink="/manage-la-permission" >Manage</button>
+                        <button mat-menu-item>Delete</button></mat-menu></td>
+                      </tr>
+                  </tbody>
+                </table>
+          </div>
+        </div>
+        </mat-card>
+        </div>
+<app-footer></app-footer>

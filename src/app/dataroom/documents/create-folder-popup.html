@@ -1,0 +1,22 @@
+<div class="create-folder-popup">
+        <h4>Create Folder</h4>
+        <div mat-dialog-content>
+                <div class="row">
+                        <div class="col-md-12 mb-3">
+                                <form class="example-form">
+                                        <mat-form-field class="example-full-width">
+                                          <input matInput placeholder="Folder Name">
+                                          <mat-hint>Folder Name is Required!</mat-hint>
+                                        </mat-form-field>
+                                      </form>
+                        </div>
+                    </div>
+            </div>
+          <div class="row dialog-actions text-left mb-0">
+            <div class="col-md-12 pb-1 ">
+                <button mat-button (click)="onNoClick()" class="cancelbtn">Cancel</button>
+                <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial class="createbtn">Create</button>
+                
+            </div>
+          </div>
+</div>

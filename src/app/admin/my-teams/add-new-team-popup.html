@@ -1,0 +1,51 @@
+<h1 mat-dialog-title>Create New Team{{data.name}}</h1>
+<div mat-dialog-content>
+    <form class="add-mem-form create-team-form">
+      <div class="row">
+          <div class="col-md-6">
+              <mat-form-field class="example-full-width">
+                  <input matInput #message placeholder="Team Name">
+                </mat-form-field>
+          </div>
+          <div class="col-md-6">
+              <mat-form-field>
+                  <input matInput type="number" placeholder="No. of Dataroom Allowed"  min="10">
+                </mat-form-field>
+          </div>
+      </div>
+      <div class="row rowmrg">
+          <div class="col-md-6">
+              <mat-form-field>
+                  <input matInput type="number" placeholder="Select Admin" min="10">
+                </mat-form-field>
+          </div>
+          <div class="col-md-6">
+              <mat-form-field>
+                  <input matInput type="number" placeholder="Storage Allowed(GB)" min="10">
+                </mat-form-field>
+          </div>
+      </div>
+      <div class="row rowmrg">
+          <div class="col-md-6">
+              <mat-form-field>
+                  <input matInput placeholder="Start Date">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+          </div>
+          <div class="col-md-6">
+              <mat-form-field>
+                  <input matInput [matDatepicker]="picker" placeholder="End Date">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+          </div>
+      </div>
+  </form>
+</div>
+  <div class="row dialog-actions">
+    <div class="col-md-12">
+        <button mat-button (click)="onNoClick()" class="cancelbtn">Cancel</button>
+        <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial class="createbtn">Create Team</button>
+    </div>
+  </div>

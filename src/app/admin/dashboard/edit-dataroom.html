@@ -1,0 +1,61 @@
+<h1 mat-dialog-title>Edit Data Room</h1>
+<div mat-dialog-content>
+    <div class="row">
+        <div class="col-md-12">
+                            <!-- <mat-card> -->
+                                    <div class="row">
+                                            <div class="col-md-10">
+                                                        <mat-form-field class="example-full-width popuptxt">
+                                                                        <input matInput #message placeholder="Dataroom ID">
+                                                                      </mat-form-field>
+                                            </div>
+                                            <div class="col-md-10">
+                                                        <mat-form-field class="example-full-width popuptxt">
+                                                                        <input matInput #message placeholder="Data Room Name">
+                                                        </mat-form-field>
+                                            </div>
+                                    </div>
+                                        <div class="row rowmrg">
+                                            <div class="col-md-12 ">
+                                                    <h4>Enable module</h4>
+                                            </div>
+                                            <div class="col-md-4 module-slide ">
+                                                <mat-slide-toggle>Watermarking</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-4 module-slide">
+                                                <mat-slide-toggle>DRM</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-4 module-slide">
+                                                    <mat-slide-toggle>Q&A</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-4 module-slide">
+                                                    <mat-slide-toggle>Collaboration</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-4 module-slide">
+                                                    <mat-slide-toggle>OCR</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-4 module-slide">
+                                                    <mat-slide-toggle>Editors</mat-slide-toggle>
+                                            </div>
+                                        </div>
+                                        <div class="row rowmrg">
+                                            <div class="col-md-12 module-slide">
+                                                <h4>Apply Account level Branding</h4>
+                                                <mat-slide-toggle class="module-slide">Account level Branding</mat-slide-toggle>
+                                            </div>
+                                            <div class="col-md-10 mb-4">
+                                                        <mat-form-field class="popuptxt">
+                                                                        <input matInput type="number" placeholder="Enter Data Room Storage(GB)" min="10">
+                                                                      </mat-form-field>
+                                            </div>
+                                        </div>
+                            <!-- </mat-card> -->
+        </div>
+    </div>
+</div>
+  <div class="row dialog-actions">
+    <div class="col-md-12">
+        <button mat-button (click)="onNoClick()" class="cancelbtn">Cancel</button>
+        <button mat-button [mat-dialog-close]="true" cdkFocusInitial class="createbtn">Save</button>
+    </div>
+  </div>

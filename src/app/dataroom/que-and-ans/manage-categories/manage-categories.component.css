@@ -1,0 +1,9 @@
+.add-cat{
+    margin: 2% 2%;
+    background-color: #fafafa;
+    padding: 30px;
+}
+.add-cat .mat-form-field{
+    width: 100%;
+
+}

@@ -1,0 +1,89 @@
+<app-dataroom-header></app-dataroom-header>
+<div class="main-overview-content">
+    <mat-card class="main-content-matcard">
+      <div class="row userper-tabs">
+        <div class="col-md-6">
+          <h4>Manage limited access admin group</h4>
+          <p class="mb-0">Group name: shweta</p>
+        </div>
+        <div class="col-md-6 text-right">
+            <button mat-button class="createbtn">Back</button>
+        </div>
+        <div class="col-md-12">
+            <mat-tab-group mat-align-tabs="center">
+                <mat-tab label="Group Name">
+                  <mat-card>
+                    <div class="row edit-grp-nm mt-3">
+                      <div class="col-md-12">
+                          <mat-form-field class="example-full-width">
+                              <input matInput #message placeholder="Edit Group Name">
+                            </mat-form-field>
+                            <button mat-button class="createbtn">Save</button>
+                      </div>
+                      
+                    </div>
+                  </mat-card>
+                </mat-tab>
+                <mat-tab label="Manage Module Permission">
+                    <mat-card>
+                        <div class="row edit-grp-nm mt-3">
+                          <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4 module-slide ">
+                                    <mat-slide-toggle>Overview</mat-slide-toggle>
+                                </div>
+                                <div class="col-md-4 module-slide ">
+                                    <mat-slide-toggle>Q&A</mat-slide-toggle>
+                                </div>
+                                <div class="col-md-4 module-slide ">
+                                    <mat-slide-toggle>Documents</mat-slide-toggle>
+                                </div>
+                                <div class="col-md-4 module-slide ">
+                                    <mat-slide-toggle>Updates</mat-slide-toggle>
+                                </div>
+                                <div class="col-md-4 module-slide ">
+                                    <mat-slide-toggle>Reports</mat-slide-toggle>
+                                </div>
+                                <div class="col-md-4 module-slide ">
+                                    <mat-slide-toggle>User & Permissions</mat-slide-toggle>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 btn-align">
+                            <p class="m-0"><button mat-button class="createbtn">Apply</button></p>
+                          </div>
+                          
+                          
+                        </div>
+                      </mat-card>
+                </mat-tab>
+                <mat-tab label="Add New Members">Content 3</mat-tab>
+                <mat-tab label="Manage Members">Content 3</mat-tab>
+              </mat-tab-group>
+              
+        </div>
+        <!-- <div class="col-md-12 text-center">
+            <ul class="admin-header-menu">
+                <li class="Active">
+                   <button type="button" routerLink="/" class="dashboard-btn admin-head-btn Active" mat-button>
+                    Group Name </button>
+                  </li>
+                <li > 
+                  <button type="button" routerLink="/" class="admin-head-btn" mat-button>
+                    Manage Module Permission</button>
+                </li>
+                <li >
+                   <button type="button" routerLink="/" class="admin-head-btn" mat-button> 
+                    Add New Members</button>
+                  </li>
+                  <li >
+                      <button type="button" routerLink="/" class="admin-head-btn" mat-button> 
+                        Manage Members</button>
+                     </li>
+              </ul>
+        </div> -->
+      </div>
+      </mat-card>
+      </div>
+      <app-footer></app-footer>
+      

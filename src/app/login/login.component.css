@@ -1,0 +1,29 @@
+.account-sec {
+    display: table;
+    float: none;
+    margin: 100px auto 0;
+    text-align: center;
+    width: 420px;
+}
+.account-option {
+    float: left;
+    list-style: outside none none;
+    margin: 0 0 40px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.account-form > fieldset {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    width: 100%;
+}
+.account-form > fieldset > i {
+    color: #555555;
+    float: left;
+    font-size: 17px;
+    line-height: 50px;
+}

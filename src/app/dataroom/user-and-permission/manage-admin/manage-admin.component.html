@@ -1,0 +1,267 @@
+<app-dataroom-header></app-dataroom-header>
+<div class="main-overview-content">
+        <mat-card class="main-content-matcard">
+            <div class="row rowmrg ">
+                <div class="col-md-6"><h4>Manage Administrator Group</h4></div>
+                <div class="col-md-6 text-right">
+                        <button mat-button class="createbtn" onclick="history.go(-1)">Back</button>
+                </div>
+                <div class="col-md-12">
+                    <mat-tab-group mat-align-tabs="center">
+                        <mat-tab label="Add new Member">
+                            <div class="add-new-mamber-content">
+                                <mat-card class="mt-4">
+                                  <div class="row add-member-fm">
+                                      <div class="col-md-3">
+                                          <mat-form-field class="example-full-width">
+                                              <input matInput #message placeholder="First Name">
+                                              <mat-hint>First Name is required</mat-hint>
+                                            </mat-form-field>
+                                      </div>
+                                      <div class="col-md-3">
+                                          <form class="example-form">
+                                              <mat-form-field class="example-full-width">
+                                                <input matInput #message placeholder="Last Name">
+                                                <mat-hint>Last Name is required</mat-hint>
+                                              </mat-form-field>
+                                            </form>
+                                      </div>
+                                      <div class="col-md-3">
+                                          <form class="example-form">
+                                              <mat-form-field class="example-full-width">
+                                                <input matInput #message placeholder="Email ID">
+                                                <mat-hint>Email ID is required</mat-hint>
+                                              </mat-form-field>
+                                            </form>
+                                      </div>
+                                      <div class="col-md-3 btn-align">
+                                          <button type="button" class="addbtn addmem" mat-button>Add Member</button>
+                                      </div>
+                                  </div>
+                                    <div class="row">
+                                        <div class="col-md-12 p-0">
+                                            <table class="table listing-tbl">
+                                                <thead>
+                                                  <tr>
+                                                    <th><mat-checkbox></mat-checkbox></th>
+                                                    <th>Sr. No.</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Email ID</th>
+                                                    <th>Action</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td><mat-checkbox></mat-checkbox></td>
+                                                    <td>1</td>
+                                                    <td>Anna </td>
+                                                    <td>Doe</td>
+                                                    <td>pfitza@msn.com</td>
+                                                    <td><i class="material-icons">
+                                                        more_vert
+                                                        </i></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><mat-checkbox></mat-checkbox></td>
+                                                      <td>2</td>
+                                                      <td>Anna </td>
+                                                      <td>Doe</td>
+                                                      <td>pfitza@msn.com</td>
+                                                      <td><i class="material-icons">
+                                                          more_vert
+                                                          </i></td>
+                                                    </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4 mb-4">
+                                        <div class="col-md-12 p-0 text-right">
+                                            <button mat-button class="btn prcont-btn">
+                                                Review
+                                            </button>
+                                        </div>
+                                        <div class="col-md-12 p-0">
+                                          <h5 class="mb-3">Custom Message</h5>
+                                          <div class="custom-msg">
+                                            <p class="m-0">I'd like you to join my secure dataroom. I'd like you to join my secure dataroom.
+                                               I'd like you to join my secure dataroom.
+                                               I'd like you to join my secure dataroom.
+                                               I'd like you to join my secure dataroom. I'd like you to join my secure dataroom. I'd like you to join my secure dataroom.
+                                                  </p>
+                                                  <p class="text-right m-0"><button mat-button mat-raised-button (click)="openDialog()" class="btn editdatarm-btn">
+                                                      Send Invitation
+                                                  </button></p>
+                                             
+                                          </div>
+                                        </div>
+                                        
+                                      </div>
+                                          </mat-card>
+                                          </div>
+                        </mat-tab>
+                        <mat-tab label="Manage Members">
+                          <div class="manage-mamber-content">
+                              <mat-card class="mt-4">
+                                  <div class="row">
+                                      <div class="col-md-12 p-0">
+                                          <table class="table listing-tbl">
+                                              <thead>
+                                                <tr>
+                                                  <th><mat-checkbox></mat-checkbox></th>
+                                                  <th>Email ID</th>
+                                                  <th>First Name</th>
+                                                  <th>Last Name</th>
+                                                  <th>Active/Inactive</th>
+                                                  <th>Resend Invitation</th>
+                                                  <th>Added By</th>
+                                                  <th>Q&A  Co-ordinator</th>
+                                                  <th>Primary Contact</th>
+                                                  <th>Action</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td><mat-checkbox></mat-checkbox></td>
+                                                  <td>pfitza@msn.com</td>
+                                                  <td>Anna </td>
+                                                  <td>Doe</td>
+                                                  <td>Active</td>
+                                                  <td></td>
+                                                  <td></td>
+                                                  <td><mat-checkbox></mat-checkbox></td>
+                                                  <td><mat-checkbox></mat-checkbox></td>
+                                                  <td><i class="material-icons">
+                                                      more_vert
+                                                      </i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><mat-checkbox></mat-checkbox></td>
+                                                    <td>pfitza@msn.com</td>
+                                                    <td>Anna </td>
+                                                    <td>Doe</td>
+                                                    <td>Active</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td><mat-checkbox></mat-checkbox></td>
+                                                    <td><mat-checkbox></mat-checkbox></td>
+                                                    <td><i class="material-icons">
+                                                        more_vert
+                                                        </i></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><mat-checkbox></mat-checkbox></td>
+                                                      <td>pfitza@msn.com</td>
+                                                      <td>Anna </td>
+                                                      <td>Doe</td>
+                                                      <td>Active</td>
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td><mat-checkbox></mat-checkbox></td>
+                                                      <td><mat-checkbox></mat-checkbox></td>
+                                                      <td><i class="material-icons">
+                                                          more_vert
+                                                          </i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><mat-checkbox></mat-checkbox></td>
+                                                        <td>pfitza@msn.com</td>
+                                                        <td>Anna </td>
+                                                        <td>Doe</td>
+                                                        <td>Active</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><mat-checkbox></mat-checkbox></td>
+                                                        <td><mat-checkbox></mat-checkbox></td>
+                                                        <td><i class="material-icons">
+                                                            more_vert
+                                                            </i></td>
+                                                      </tr>
+                                                      <tr>
+                                                          <td><mat-checkbox></mat-checkbox></td>
+                                                          <td>pfitza@msn.com</td>
+                                                          <td>Anna </td>
+                                                          <td>Doe</td>
+                                                          <td>Active</td>
+                                                          <td></td>
+                                                          <td></td>
+                                                          <td><mat-checkbox></mat-checkbox></td>
+                                                          <td><mat-checkbox></mat-checkbox></td>
+                                                          <td><i class="material-icons">
+                                                              more_vert
+                                                              </i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><mat-checkbox></mat-checkbox></td>
+                                                            <td>pfitza@msn.com</td>
+                                                            <td>Anna </td>
+                                                            <td>Doe</td>
+                                                            <td>Active</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td><mat-checkbox></mat-checkbox></td>
+                                                            <td><mat-checkbox></mat-checkbox></td>
+                                                            <td><i class="material-icons">
+                                                                more_vert
+                                                                </i></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td><mat-checkbox></mat-checkbox></td>
+                                                              <td>pfitza@msn.com</td>
+                                                              <td>Anna </td>
+                                                              <td>Doe</td>
+                                                              <td>Active</td>
+                                                              <td></td>
+                                                              <td></td>
+                                                              <td><mat-checkbox></mat-checkbox></td>
+                                                              <td><mat-checkbox></mat-checkbox></td>
+                                                              <td><i class="material-icons">
+                                                                  more_vert
+                                                                  </i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><mat-checkbox></mat-checkbox></td>
+                                                                <td>pfitza@msn.com</td>
+                                                                <td>Anna </td>
+                                                                <td>Doe</td>
+                                                                <td>Active</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td><mat-checkbox></mat-checkbox></td>
+                                                                <td><mat-checkbox></mat-checkbox></td>
+                                                                <td><i class="material-icons">
+                                                                    more_vert
+                                                                    </i></td>
+                                                              </tr>
+                                              </tbody>
+                                            </table>
+                                      </div>
+                                  </div>
+                                  <div class="row mt-4 mb-4">
+                                    <div class="col-md-6 p-0">
+                                        <button mat-button mat-raised-button (click)="openDialog()" class="btn editdatarm-btn">
+                                            Send Invitation
+                                        </button> 
+                                    </div>
+                                    <div class="col-md-6 p-0 text-right">
+                                        <button mat-button mat-raised-button (click)="openDialog()" class="btn editdatarm-btn">
+                                            Apply
+                                        </button> 
+                                        <button mat-button class="btn prcont-btn">
+                                            Delete
+                                        </button>
+                                    </div>
+                                  </div>
+                                </mat-card>
+                          </div>
+                          
+                            
+                        </mat-tab>
+                        
+                      </mat-tab-group>
+                </div>
+              </div>
+          </mat-card>
+          </div>
+          <app-footer></app-footer>

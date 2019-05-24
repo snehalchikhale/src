@@ -27,7 +27,16 @@ import { IndexesReportComponent } from './dataroom/documents/indexes-report/inde
 import { TrashDocComponent } from './dataroom/documents/trash-doc/trash-doc.component';
 import { DisclaimerComponent } from './dataroom/overview/disclaimer/disclaimer.component';
 import { QueDetailsPageComponent } from './dataroom/que-and-ans/que-details-page/que-details-page.component';
-import { EditDataroom } from './admin/dashboard/dashboard.component';
+import { FolderDetailsComponent } from './dataroom/documents/folder-details/folder-details.component';
+import { ActivityByFilesComponent } from './dataroom/reports/activity-by-files/activity-by-files.component';
+import { UsersAndGroupsComponent } from './dataroom/reports/users-and-groups/users-and-groups.component';
+import { ActivityByDateComponent } from './dataroom/reports/activity-by-date/activity-by-date.component';
+import { QAReportsComponent } from './dataroom/reports/qa-reports/qa-reports.component';
+import { DownloadeReportsComponent } from './dataroom/reports/downloade-reports/downloade-reports.component';
+import { UserStatusComponent } from './dataroom/reports/user-status/user-status.component';
+import { IndexReportsComponent } from './dataroom/reports/index-reports/index-reports.component';
+import { UsageReportsComponent } from './dataroom/reports/usage-reports/usage-reports.component';
+
 
 const routes: Routes = [
   // { path: '', component: AdminHeaderComponent},
@@ -57,7 +66,15 @@ const routes: Routes = [
   { path: 'manage-categories', component: ManageCategoriesComponent},
   { path: 'disclaimer', component: DisclaimerComponent},
   { path: 'details', component: QueDetailsPageComponent},
-  { path: 'editdt', component: EditDataroom}
+  { path: 'folder_detail', component: FolderDetailsComponent},
+  { path: 'activity-by-files', component: ActivityByFilesComponent},
+  { path: 'users-group', component: UsersAndGroupsComponent},
+  { path: 'activity-by-date', component: ActivityByDateComponent},
+  { path: 'QAreports', component: QAReportsComponent},
+  { path: 'download-reports', component: DownloadeReportsComponent},
+  { path: 'user-status', component: UserStatusComponent},
+  { path: 'index-reports', component: IndexReportsComponent},
+  { path: 'usage-reports', component: UsageReportsComponent}
   
   
   

@@ -1,0 +1,99 @@
+<app-dataroom-header></app-dataroom-header>
+<div class="main-overview-content">
+    <mat-card class="main-content-matcard">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6"><h4>Reports</h4></div>
+                    <div class="col-md-6 text-right">
+                    <p><button mat-button class="createbtn">Export</button></p>
+                    </div>
+                </div>
+                <mat-card class="reports-header">
+                        <div class="reports-title"> <h4>Download Reports</h4></div>
+                        <div class="date-picker">
+                                        <mat-form-field class="from-date">
+                                            <input matInput [matDatepicker]="picker" placeholder="Choose a Date From">
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                          </mat-form-field>
+                                        <mat-form-field class="to-date">
+                                            <input matInput  placeholder="Choose a Date To">
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                          </mat-form-field>
+                                          <mat-form-field class="example-full-width float-right">
+                                                <input matInput placeholder="Search Downloaded By">
+                                              </mat-form-field>
+                                    
+                        </div>
+        </mat-card>
+        <table class="table listing-tbl mt-4">
+                <thead>
+                  <tr>
+                    <th>Download by</th>
+                    <th>Date</th>
+                    <th>file name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Malay Pankhaniya</td>
+                    <td>17/05/2019 04:34:02</td>
+                    <td><a href="">AXAT Technologies-Profile V2.docx</a></td>
+                  </tr>
+                  <tr>
+                        <td>Malay Pankhaniya</td>
+                        <td>17/05/2019 04:34:02</td>
+                        <td><a href="">AXAT Technologies-Profile V2.docx</a></td>
+                    </tr>
+                    <tr>
+                            <td>Malay Pankhaniya</td>
+                    <td>17/05/2019 04:34:02</td>
+                    <td><a href="">AXAT Technologies-Profile V2.docx</a></td>
+                      </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-3">
+            <p><button mat-button class="bttn rep-overview" routerLink="/reports">
+                    Overview
+                    <mat-icon class="rep-overview-icon">equalizer</mat-icon>
+                </button> </p>
+                <p><button mat-button class="bttn rep-activity-files" routerLink="/activity-by-files">
+                        Activity by Files
+                        <mat-icon class="rep-activity-files-icon">file_copy</mat-icon>
+                    </button> </p>
+                    <p><button mat-button class="bttn rep-user-group" routerLink="/users-group">
+                            Users and Groups
+                            <mat-icon class="rep-user-group-icon">people</mat-icon>
+                        </button> </p>
+                        <p><button mat-button class="bttn rep-activity-date" routerLink="/activity-by-date">
+                                Activity by Date
+                                <mat-icon class="rep-activity-date-icon">date_range</mat-icon>
+                            </button> </p>
+                            <p><button mat-button class="bttn rep-QA" routerLink="/QAreports">
+                                    Q&A Reports
+                                    <mat-icon class="rep-QA-icon">forum</mat-icon>
+                                </button> </p>
+                                <p><button mat-button class="bttn rep-download" routerLink="/download-reports">
+                                        Download Report
+                                        <mat-icon class="rep-download-icon">save_alt</mat-icon>
+                                    </button> </p>
+                                    <p><button mat-button class="bttn rep-user-status" routerLink="/user-status">
+                                            User Status
+                                            <mat-icon class="rep-user-status-icon">people</mat-icon>
+                                        </button> </p>
+                                        <p><button mat-button class="bttn rep-index" routerLink="/index-reports">
+                                                Index Report
+                                                <mat-icon class="rep-index-icon">timeline</mat-icon>
+                                            </button> </p>
+                                            <p><button mat-button class="bttn rep-usage" routerLink="/usage-reports">
+                                                    Usage Reports
+                                                    <mat-icon class="rep-usage-icon">data_usage</mat-icon>
+                                                </button> </p>
+            </div>
+            </div>
+            </mat-card>
+            </div>
+<app-footer></app-footer>

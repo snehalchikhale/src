@@ -1,0 +1,109 @@
+<app-dataroom-header></app-dataroom-header>
+<div class="main-overview-content">
+    <mat-card class="main-content-matcard">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6"><h4>Reports</h4>
+                        </div>
+                    <div class="col-md-6 text-right">
+                    <p><button mat-button class="createbtn">Export</button></p>
+                    </div>
+                </div>
+                <mat-card class="reports-header">
+                        <div class="reports-title"> <h4>Activity By Files <mat-slide-toggle style="float: right">Show Deleted Files</mat-slide-toggle></h4></div>
+                        <div class="date-picker">
+                                        <mat-form-field class="from-date">
+                                            <input matInput [matDatepicker]="picker" placeholder="Choose a Date From">
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                          </mat-form-field>
+                                        <mat-form-field class="to-date">
+                                            <input matInput  placeholder="Choose a Date To">
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                          </mat-form-field>
+                                          <mat-form-field class="example-full-width float-right">
+                                                <input matInput placeholder="Search Files">
+                                              </mat-form-field>
+
+                                    
+                        </div>
+        </mat-card>
+                <table class="table listing-tbl mt-4">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Parent Folder</th>
+                        <th>Type</th>
+                        <th>Created</th>
+                        <th>Uploaded By</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>79.log</td>
+                        <td>check</td>
+                        <td>application/octet-stream</td>
+                        <td>20/05/2019 10:12:55	</td>
+                        <td>Malay Pankhaniya</td>
+                      </tr>
+                      <tr>
+                            <td>79.log</td>
+                            <td>check</td>
+                            <td>application/octet-stream</td>
+                            <td>20/05/2019 10:12:55	</td>
+                            <td>Malay Pankhaniya</td>
+                        </tr>
+                        <tr>
+                                <td>79.log</td>
+                                <td>check</td>
+                                <td>application/octet-stream</td>
+                                <td>20/05/2019 10:12:55	</td>
+                                <td>Malay Pankhaniya</td>
+                          </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-3">
+            <p><button mat-button class="bttn rep-overview" routerLink="/reports">
+                    Overview
+                    <mat-icon class="rep-overview-icon">equalizer</mat-icon>
+                </button> </p>
+                <p><button mat-button class="bttn rep-activity-files" routerLink="/activity-by-files">
+                        Activity by Files
+                        <mat-icon class="rep-activity-files-icon">file_copy</mat-icon>
+                    </button> </p>
+                    <p><button mat-button class="bttn rep-user-group" routerLink="/users-group">
+                            Users and Groups
+                            <mat-icon class="rep-user-group-icon">people</mat-icon>
+                        </button> </p>
+                        <p><button mat-button class="bttn rep-activity-date" routerLink="/activity-by-date">
+                                Activity by Date
+                                <mat-icon class="rep-activity-date-icon">date_range</mat-icon>
+                            </button> </p>
+                            <p><button mat-button class="bttn rep-QA" routerLink="/QAreports">
+                                    Q&A Reports
+                                    <mat-icon class="rep-QA-icon">forum</mat-icon>
+                                </button> </p>
+                                <p><button mat-button class="bttn rep-download" routerLink="/download-reports">
+                                        Download Report
+                                        <mat-icon class="rep-download-icon">save_alt</mat-icon>
+                                    </button> </p>
+                                    <p><button mat-button class="bttn rep-user-status" routerLink="/user-status">
+                                            User Status
+                                            <mat-icon class="rep-user-status-icon">people</mat-icon>
+                                        </button> </p>
+                                        <p><button mat-button class="bttn rep-index" routerLink="/index-reports">
+                                                Index Report
+                                                <mat-icon class="rep-index-icon">timeline</mat-icon>
+                                            </button> </p>
+                                            <p><button mat-button class="bttn rep-usage" routerLink="/usage-reports">
+                                                    Usage Reports
+                                                    <mat-icon class="rep-usage-icon">data_usage</mat-icon>
+                                                </button> </p>
+            </div>
+            </div>
+            </mat-card>
+            </div>
+<app-footer></app-footer>

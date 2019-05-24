@@ -69,6 +69,15 @@ import { IndexesReportComponent } from './dataroom/documents/indexes-report/inde
 import { TrashDocComponent } from './dataroom/documents/trash-doc/trash-doc.component';
 import { DisclaimerComponent } from './dataroom/overview/disclaimer/disclaimer.component';
 import { QueDetailsPageComponent } from './dataroom/que-and-ans/que-details-page/que-details-page.component';
+import { FolderDetailsComponent } from './dataroom/documents/folder-details/folder-details.component';
+import { ActivityByFilesComponent } from './dataroom/reports/activity-by-files/activity-by-files.component';
+import { UsersAndGroupsComponent } from './dataroom/reports/users-and-groups/users-and-groups.component';
+import { ActivityByDateComponent } from './dataroom/reports/activity-by-date/activity-by-date.component';
+import { QAReportsComponent } from './dataroom/reports/qa-reports/qa-reports.component';
+import { DownloadeReportsComponent } from './dataroom/reports/downloade-reports/downloade-reports.component';
+import { UserStatusComponent } from './dataroom/reports/user-status/user-status.component';
+import { IndexReportsComponent } from './dataroom/reports/index-reports/index-reports.component';
+import { UsageReportsComponent } from './dataroom/reports/usage-reports/usage-reports.component';
 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -115,7 +124,16 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     TrashDocComponent,
     DisclaimerComponent,
     QueDetailsPageComponent,
-    EditDataroomContent
+    EditDataroomContent,
+    FolderDetailsComponent,
+    ActivityByFilesComponent,
+    UsersAndGroupsComponent,
+    ActivityByDateComponent,
+    QAReportsComponent,
+    DownloadeReportsComponent,
+    UserStatusComponent,
+    IndexReportsComponent,
+    UsageReportsComponent
     
     
   

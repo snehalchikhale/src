@@ -806,6 +806,12 @@ span.username{
     .notifn-list-item p a {
         color: #049fd9;
     }
+    .table_section {
+        padding: 0px 0px 0px 10px;
+        color: #049fd9;
+        cursor: pointer;
+        text-align: left;
+    }
     .video-desc{
         padding-top: 9px;
         padding-left: 30px;}
@@ -960,7 +966,8 @@ span.username{
         i.blue_icons {
             color: #049fd9;
             font-size: 22px;
-            float: left;
+            display: inline-block;
+            
         }
         
         i.yellow_icons {
@@ -1079,4 +1086,197 @@ span.username{
         .update-desc p {
             margin: 0;
             padding: 3px 0px;
+        }
+        .tbl-icon-txt,.items-txt{display: flex; align-items: center;}
+        
+        .bttn {
+            border-radius: 0px !important;
+            padding: 10px 20px 10px 30px!important;
+            width: 100%;
+            font-size: 18px;
+            color: #fff;
+            text-align: left !important;
+        }
+        .rep-overview-icon {
+            font-size: 63px;
+            color: #fff;
+            opacity: 0.2;
+            margin-top: -40px;
+            margin-left: 91px;
+        }
+        .rep-overview,.rep-QA,.rep-usage {
+            background-color: #42a5f5;
+        }
+        .rep-activity-files, .rep-download {
+            background-color: #66bb6a;
+        }
+        .rep-user-group, .rep-user-status {
+            background-color: #ffa726;
+        }
+        .rep-activity-date,.rep-index{
+            background-color: #7e57c2;
+        }
+        .rep-activity-files-icon {
+            font-size: 53px;
+            color: #fff;
+            opacity: 0.2;
+            margin-top: -33px;
+            margin-left: 45px;
+        }
+        .rep-user-group-icon {
+            font-size: 53px;
+            color: #fff;
+            opacity: 0.2;
+            margin-top: -33px;
+            margin-left: 30px;
+        }
+        .rep-activity-date-icon {
+            font-size: 53px;
+            color: #fff;
+            opacity: 0.2;
+            margin-top: -33px;
+            margin-left: 47px;
+        }
+        .rep-QA-icon {
+            font-size: 53px;
+            color: #fff;
+            opacity: 0.2;
+            margin-top: -33px;
+            margin-left: 72px;
+        }
+        .rep-download-icon {
+            font-size: 53px;
+            color: #fff;
+            opacity: 0.2;
+            margin-top: -33px;
+            margin-left: 33px;
+        }
+        .rep-user-status-icon {
+            font-size: 53px;
+            color: #fff;
+            opacity: 0.2;
+            margin-top: -33px;
+            margin-left: 80px;
+        }
+        .rep-index-icon {
+            font-size: 53px;
+            color: #fff;
+            opacity: 0.2;
+            margin-top: -33px;
+            margin-left: 68px;
+        }
+        .rep-usage-icon {
+            font-size: 53px;
+            color: #fff;
+            opacity: 0.2;
+            margin-top: -33px;
+            margin-left: 55px;
+        }
+        .from-date {
+            margin-right: 30px;
+        }
+        .mat-card.reports-header {
+            padding: 0px;
+            border-radius: 0px;
+            box-shadow: 0px 0px 10px #ddddddc7;
+        }
+        .reports-title {
+            padding: 15px 20px;
+            background-color: #fafafa;
+        }
+        .date-picker {
+            padding: 10px 20px;
+        }
+        .mat-card.dataroom-vivews {
+            margin-top: 20px;
+            border-radius: 0px;
+            box-shadow: 0px 0px 10px #ddddddc7;
+        }
+        .dataroom-vivews h4{
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 20px;    
+        }
+        .items-txt .material-icons{margin-right: 10px;}
+        .mat-card.views-list {
+            margin-top: 20px;
+            border-radius: 0px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px #ddddddc7;
+        }
+        .views-list .items {
+            padding: 10px 0px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        span.dnld-report {
+            float: right;
+            margin-top: 15px;
+        }
+        .user-status .icon-text {
+            display: flex;
+            align-items: center;
+        }
+        .user-status .icon-text .materials-icon{margin-right: 5px;}
+        .user-status .user-name {
+            background-color: #ffa726;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            padding: 5px 0px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+        .user-status .email {
+            text-align: center;
+            color: #ffa726;
+        }
+        .user-status .user-roles {
+            background-color: #ffa726;
+            color: #fff;
+            font-size: 15px;
+            width: 170px;
+            font-weight: 500;
+            text-align: center;
+            padding: 5px 0px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            margin: 0 auto;
+        }
+        .user-status .del_user{
+            position: absolute;
+            right: 20px;
+            color: #f44336;
+        }
+        .user-status{
+            border-radius: 0px;
+            box-shadow: none !important;
+            margin: 15px 0px;
+        }
+        .limited-access{
+            background-color: #ffc67340;
+        }
+        .admin-access {
+            background-color: #e0dbfd;
+        }
+        .admin-access .user-name {
+            background-color: #992ad8;
+        }
+        .admin-access .user-roles {
+            background-color: #992ad8;
+        }
+        .admin-access .email {
+            color: #992ad8 !important;
+        }
+        .end-user {
+            background-color: #e1fbf0;
+        }
+        .end-user .user-name {
+            background-color: #66bb6a;
+        }
+        .end-user .user-roles {
+            background-color: #66bb6a;
+        }
+        .end-user .email {
+            color: #66bb6a !important;
         }

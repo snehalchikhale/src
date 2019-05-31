@@ -78,6 +78,7 @@ import { DownloadeReportsComponent } from './dataroom/reports/downloade-reports/
 import { UserStatusComponent } from './dataroom/reports/user-status/user-status.component';
 import { IndexReportsComponent } from './dataroom/reports/index-reports/index-reports.component';
 import { UsageReportsComponent } from './dataroom/reports/usage-reports/usage-reports.component';
+import { SignedDisclaimersComponent } from './dataroom/documents/signed-disclaimers/signed-disclaimers.component';
 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -133,7 +134,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     DownloadeReportsComponent,
     UserStatusComponent,
     IndexReportsComponent,
-    UsageReportsComponent
+    UsageReportsComponent,
+    SignedDisclaimersComponent
     
     
   

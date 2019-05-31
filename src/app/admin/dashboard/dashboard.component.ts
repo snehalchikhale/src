@@ -1,6 +1,8 @@
 // import { Component, OnInit } from '@angular/core';
 import {Component, Inject} from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { PerfectScrollbarConfigInterface,
+  PerfectScrollbarComponent, PerfectScrollbarDirective } from 'ngx-perfect-scrollbar';
 
 export interface DialogData {
   animal: string;
@@ -17,6 +19,7 @@ export interface DialogData {
 export class DashboardComponent{
 
   constructor(public dialog: MatDialog) { }
+  public config: PerfectScrollbarConfigInterface = {};
   openDialog() {
     
     const dialogRef = this.dialog.open(EditDataroom , {

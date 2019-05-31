@@ -36,6 +36,7 @@ import { DownloadeReportsComponent } from './dataroom/reports/downloade-reports/
 import { UserStatusComponent } from './dataroom/reports/user-status/user-status.component';
 import { IndexReportsComponent } from './dataroom/reports/index-reports/index-reports.component';
 import { UsageReportsComponent } from './dataroom/reports/usage-reports/usage-reports.component';
+import { SignedDisclaimersComponent } from './dataroom/documents/signed-disclaimers/signed-disclaimers.component';
 
 
 const routes: Routes = [
@@ -74,7 +75,8 @@ const routes: Routes = [
   { path: 'download-reports', component: DownloadeReportsComponent},
   { path: 'user-status', component: UserStatusComponent},
   { path: 'index-reports', component: IndexReportsComponent},
-  { path: 'usage-reports', component: UsageReportsComponent}
+  { path: 'usage-reports', component: UsageReportsComponent},
+  { path: 'signed-disclaimer', component: SignedDisclaimersComponent}
   
   
   

@@ -97,10 +97,6 @@
                                 </i>
                                 <span class="doc_leftmenu" routerLink="/trash-doc">Trash</span>
                           </mat-list-item>
-                          <!-- <mat-list-item role="listitem" >
-                            <i class="material-icons">help_outline</i> <span class="heading-txt">FAQ</span>
-                            <span class="text-right count-txt">600</span>
-                          </mat-list-item> -->
                         </mat-list>
                         
                 </div>
@@ -108,83 +104,62 @@
             <div class="col-md-9">
                 <div class="table_sections doc-tbl">
                     <div class="recnt-doc">
-                        <h4 >Trash</h4>
+                        <h4>Signed Disclaimers</h4>
                       </div>
-                      <div class="doc-breadcrum tbl-header">
-                        <div class="row">
-                          <div class="col-md-8 sub-txt">
-                              <h5 class="p-0">All Documents > Trash</h5>
-                          </div>
-                          <div class="col-md-4 text-right">
-                            <mat-form-field appearance="standard">
-                              <mat-label>Search Deleted By</mat-label>
-                              <input matInput placeholder="Placeholder">
-                              <mat-icon class="filter-icon" matSuffix>filter_list</mat-icon>
-                            </mat-form-field>
-                          </div>
-                        </div>
+                      <div class="doc-breadcrum">
+                          <h5>All Documents >Signed Disclaimers</h5>
                       </div>
-                <table class="table listing-tbl doc_tble text-center">
-                        <thead>
-                          <tr>
-                            <th><mat-checkbox></mat-checkbox></th>
-                            <th>Documents Name</th>
-                            <th>Documents Size</th>
-                            <th>Date & Time</th>
-                            <th>Deleted By</th>
-                            <th>Restore Documents</th>
-                            <th>Permenant Delete</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><mat-checkbox></mat-checkbox></td>
-                            <td>
-                                    <i class="material-icons blue_icons">folder_open</i>
-                                        <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
-                            <td>0.26</td>
-                            <td>March 18, 2019 (12:19:02)</td>
-                            <td>Malay</td>
-                            <td><i class="material-icons">
-                                restore_from_trash
-                                </i></td>
-                                <td><i class="material-icons">
-                                    delete_outline
-                                    </i></td>
-                          </tr>
-                          <tr>
-                              <td><mat-checkbox></mat-checkbox></td>
-                              <td>
-                                      <i class="material-icons blue_icons">folder_open</i>
-                                          <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
-                              <td>0.26</td>
-                              <td>March 18, 2019 (12:19:02)</td>
-                              <td>Malay</td>
-                              <td><i class="material-icons">
-                                  restore_from_trash
-                                  </i></td>
-                                  <td><i class="material-icons">
-                                      delete_outline
-                                      </i></td>
-                            </tr>
-                            <tr>
-                                <td><mat-checkbox></mat-checkbox></td>
-                                <td>
-                                        <i class="material-icons blue_icons">folder_open</i>
-                                            <span class="table_section">AXAT Technologies-Profile.pdf</span></td>
-                                <td>0.26</td>
-                                <td>March 18, 2019 (12:19:02)</td>
-                                <td>Malay</td>
-                                <td><i class="material-icons">
-                                    restore_from_trash
-                                    </i></td>
-                                    <td><i class="material-icons">
-                                        delete_outline
-                                        </i></td>
-                              </tr>
-                        
-                        </tbody>
-                      </table>
+                      <div class="manage-desclaimer">
+                          <button mat-button mat-raised-button  routerLink="/disclaimer" class="btn editdatarm-btn">
+                              Manage Disclaimers
+                          </button>
+                      </div>
+                      <div class="table-data">
+                          <table class="table listing-tbl">
+                              <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date Signed</th>
+                                    <th>Filename</th>
+                                    <th>Action</th>
+                                </tr>
+                                
+                              </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Malay</td>
+                                        <td>August 30 2017, 4:41 PM</td>
+                                        <td>malay.pdf</td>
+                                        <td><i class="material-icons downld-icon">get_app</i></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Raveena</td>
+                                          <td>August 12 2018, 4:41 PM</td>
+                                          <td>raveena.pdf</td>
+                                          <td><i class="material-icons downld-icon">get_app</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Malay</td>
+                                            <td>August 30 2017, 4:41 PM</td>
+                                            <td>malay.pdf</td>
+                                            <td><i class="material-icons downld-icon">get_app</i></td>
+                                          </tr>
+                                          <tr>
+                                              <td>Malay</td>
+                                              <td>August 30 2017, 4:41 PM</td>
+                                              <td>malay.pdf</td>
+                                              <td><i class="material-icons downld-icon">get_app</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Malay</td>
+                                                <td>August 30 2017, 4:41 PM</td>
+                                                <td>malay.pdf</td>
+                                                <td><i class="material-icons downld-icon">get_app</i></td>
+                                              </tr>
+                                    </tbody>
+                                  </table>
+                      </div>
+                
                       </div>
             </div>
         </div>

@@ -1,2 +1,5 @@
-
+.row.team-list .mat-list-item:hover span,
+.row.team-list .mat-list-item:hover .material-icons {
+    color: #049fd9;
+}
 

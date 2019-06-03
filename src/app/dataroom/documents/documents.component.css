@@ -1,1 +1,21 @@
 
+.files-action .material-icons {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+    margin: 0 auto;
+    display: inline-block;
+}
+.action-tabs{position: relative; margin: 20px;cursor: pointer;}   
+.files-action {
+    padding: 20px 0px;
+    background-color: #f7f7f7;
+    margin-top: 10px;
+}
+.action-tabs span {
+    margin-top: 25px;
+    display: inline-block;
+    font-weight: 500;
+}

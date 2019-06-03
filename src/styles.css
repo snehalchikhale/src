@@ -20,8 +20,11 @@ body{
     color: #676c7b;
     font-family: 'Roboto', sans-serif;
 }
+.txt2 a:hover {
+    background-color: #f7f7f7;
+}
 /* common css */
-.cursor-pointer{cursor: pointer;}
+.cursor-pointer{cursor: pointer; outline: none;}
 .mat-list-item-content .mat-line {
     color: #3d3d3d;
     font-size: 14px !important;
@@ -29,6 +32,7 @@ body{
 p {
     color: #676c7b;
 }
+.Active{color: #049fd9;}
 .mat-form-field {
     color: #676c7b !important;
     font-size: 15px;
@@ -94,13 +98,22 @@ h5 {
 .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
     background-color: #99a8f4;
 }
-.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{
     background-color: #049fd9;
 }
 .mat-slide-toggle.mat-checked .mat-ripple-element {
     background-color: #049fd9;
 }
+.admin-head-btn:hover .mat-icon,.admin-head-btn:hover{
+    color:#049fd9;
+}
 ul.admin-header-menu li.Active {
+    border-bottom: 2px solid #049fd9 !important;
+}
+ul.admin-header-menu li:hover {
+    border-bottom: 2px solid #049fd9 !important;
+}
+ul.admin-header-menu li.Active:hover {
     border-bottom: 2px solid #049fd9 !important;
 }
 .editdatarm-btn {
@@ -1232,16 +1245,9 @@ span.username{
             color: #ffa726;
         }
         .user-status .user-roles {
-            background-color: #ffa726;
-            color: #fff;
+            color: #000;
             font-size: 15px;
-            width: 170px;
             font-weight: 500;
-            text-align: center;
-            padding: 5px 0px;
-            border-radius: 3px;
-            margin-bottom: 10px;
-            margin: 0 auto;
         }
         .user-status .del_user{
             position: absolute;
@@ -1262,9 +1268,7 @@ span.username{
         .admin-access .user-name {
             background-color: #992ad8;
         }
-        .admin-access .user-roles {
-            background-color: #992ad8;
-        }
+       
         .admin-access .email {
             color: #992ad8 !important;
         }
@@ -1274,9 +1278,7 @@ span.username{
         .end-user .user-name {
             background-color: #66bb6a;
         }
-        .end-user .user-roles {
-            background-color: #66bb6a;
-        }
+       
         .end-user .email {
             color: #66bb6a !important;
         }
@@ -1297,15 +1299,12 @@ span.username{
         .left-content .mat-list span{outline: none;}
         /* hover */
         .search-filter .mat-list-item:hover {
-            background-color: #E8F9FF !important;
+            background-color: #f7f7f7 !important;
         }
         .access_historydetails table tbody tr:hover {
-            background-color: #E8F9FF;
+            background-color: #f7f7f7;
         }
         .message-button:hover,.notification-button:hover {
-            background-color: #E1E1E1;
-        }
-        button.admin-head-btn:hover {
             background-color: #f7f7f7;
         }
         button.downlaod:hover {
@@ -1314,4 +1313,39 @@ span.username{
         .listing-tbl tbody tr:hover {
             background-color: #f7f7f7;
         }
+        .member-list .mycontact_leftside:hover {
+            background-color: #fff;
+        }
+        .row.dataroomsrow:hover {
+            background-color: #f7f7f7;
+        }
+        .team-list .mat-list-item {
+            cursor: pointer;
+        }
+        .material-icons {
+            outline: none;
+        }
+        .overview-icons i:hover {
+            background-color: #f7f7f7;
+        }
+        .mat-button {
+            outline: none;
+        }
+        .btn:focus {
+            box-shadow: none !important;
+        }
+        button.btn.prcont-btn:hover,.editdatarm-btn:hover {
+            box-shadow: 0px 0px 10px #ccc;
+        }
         /* end hover */
+        .mycontact_leftside .mat-list-text {
+            padding-left: 0px !important;
+        }
+       .mat-checkbox-checked .mat-checkbox-background {
+            background-color: #049fd9 !important;
+          }
+          .user-role-icon {
+            font-size: 14px;
+            color: #000;
+        }
+
